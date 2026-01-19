@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - JBG Global Solutions</title>
+    <meta name="description" content="Build your future with JBG Global Solutions. Join us to work on cutting-edge technologies, global projects, and impactful infrastructure initiatives.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/expo-3d.css">
+    <link rel="stylesheet" href="assets/css/globe-3d.css">
+    <link rel="stylesheet" href="assets/css/partners.css">
+    <link rel="stylesheet" href="assets/css/dark-blue-option2.css">
+    <link rel="stylesheet" href="assets/css/jbg-logo.css">
+    <link rel="stylesheet" href="assets/css/chatbot.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body>
+
+    <!-- 3D Animated Background System -->
+    <div class="bg-system">
+        <div class="starfield" id="starfield"></div>
+        <div class="nebula nebula-1"></div>
+        <div class="nebula nebula-2"></div>
+        <div class="nebula nebula-3"></div>
+        <div class="grid-floor"></div>
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo jbg-logo-container">
+                <div class="logo-icon jbg-logo">
+                    <object type="image/svg+xml" data="assets/images/jbg-logo.svg" class="jbg-animated-svg">JBG</object>
+                </div>
+                <div class="logo-text">
+                    <span class="brand">JBG Global</span>
+                    <span class="tagline">Solutions Pvt Ltd</span>
+                </div>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="careers.html" class="active">Careers</a></li>
+                <li><a href="contact.html" class="nav-cta">Talk to Experts</a></li>
+            </ul>
+            
+            <button class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <span class="hero-badge">
+                    <i class="fas fa-users"></i>
+                    <span>Join Our Team</span>
+                </span>
+                <h1 class="page-title">
+                    Build Your <span class="gradient-text">Future</span> With Us
+                </h1>
+                <p class="page-subtitle">
+                    We offer opportunities to work on cutting-edge technologies, global projects, and impactful infrastructure initiatives
+                </p>
+            </div>
+            
+            <!-- 3D Rising Stars -->
+            <div class="hero-3d-element">
+                <div class="rising-elements">
+                    <div class="rise-item ri-1"><i class="fas fa-star"></i></div>
+                    <div class="rise-item ri-2"><i class="fas fa-rocket"></i></div>
+                    <div class="rise-item ri-3"><i class="fas fa-trophy"></i></div>
+                    <div class="rise-item ri-4"><i class="fas fa-medal"></i></div>
+                    <div class="rise-item ri-5"><i class="fas fa-crown"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Join Us -->
+    <section class="section why-join">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-heart"></i>
+                    Why JBG
+                </span>
+                <h2 class="section-title">
+                    Why Work <span class="gradient-text">With Us</span>
+                </h2>
+            </div>
+            
+            <div class="perks-grid">
+                <div class="perk-card">
+                    <div class="perk-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Cutting-Edge Technologies</h3>
+                    <p>Work with the latest in AI, ML, Cloud, and Automation technologies</p>
+                </div>
+                
+                <div class="perk-card">
+                    <div class="perk-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Global Exposure</h3>
+                    <p>Collaborate with teams across onshore and offshore locations worldwide</p>
+                </div>
+                
+                <div class="perk-card">
+                    <div class="perk-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Career Growth</h3>
+                    <p>Clear career paths and continuous learning opportunities</p>
+                </div>
+                
+                <div class="perk-card">
+                    <div class="perk-icon"><i class="fas fa-users"></i></div>
+                    <h3>Diverse Teams</h3>
+                    <p>Work with talented professionals from diverse backgrounds</p>
+                </div>
+                
+                <div class="perk-card">
+                    <div class="perk-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Innovation Culture</h3>
+                    <p>Be part of a culture that encourages creativity and innovation</p>
+                </div>
+                
+                <div class="perk-card">
+                    <div class="perk-icon"><i class="fas fa-balance-scale"></i></div>
+                    <h3>Work-Life Balance</h3>
+                    <p>Flexible work arrangements and employee wellbeing programs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Categories -->
+    <section class="section career-categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-briefcase"></i>
+                    Opportunities
+                </span>
+                <h2 class="section-title">
+                    Career <span class="gradient-text">Paths</span>
+                </h2>
+                <p class="section-subtitle">
+                    Explore opportunities across our diverse practice areas
+                </p>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="cat-icon"><i class="fas fa-code"></i></div>
+                    <h3>Technology & Engineering</h3>
+                    <p>Software Development, DevOps, Cloud Engineering, Data Science, AI/ML Engineers</p>
+                    <div class="open-positions">
+                        <span>Multiple Openings</span>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="cat-icon"><i class="fas fa-bullhorn"></i></div>
+                    <h3>Digital & Marketing</h3>
+                    <p>Digital Strategists, SEO/SEM Specialists, Content Creators, Social Media Managers</p>
+                    <div class="open-positions">
+                        <span>Multiple Openings</span>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="cat-icon"><i class="fas fa-headset"></i></div>
+                    <h3>Operations & Managed Services</h3>
+                    <p>Project Managers, Business Analysts, Operations Support, Process Consultants</p>
+                    <div class="open-positions">
+                        <span>Multiple Openings</span>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="cat-icon"><i class="fas fa-building"></i></div>
+                    <h3>Interior & Infrastructure</h3>
+                    <p>Architects, Interior Designers, Project Engineers, Site Managers</p>
+                    <div class="open-positions">
+                        <span>Multiple Openings</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join CTA -->
+    <section class="section join-cta">
+        <div class="container">
+            <div class="join-content">
+                <div class="join-text">
+                    <h2>Join Us to <span class="gradient-text">Innovate, Grow & Lead</span></h2>
+                    <p>Take the next step in your career journey with JBG Global Solutions</p>
+                </div>
+                <a href="contact.html" class="btn btn-primary btn-large pulse-glow">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Apply Now</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <object type="image/svg+xml" data="assets/images/jbg-logo.svg" class="footer-jbg-logo" style="width: 50px; height: 50px;">JBG</object>
+                        <span>JBG Global Solutions</span>
+                    </div>
+                    <p class="footer-description">
+                        Global transformation partner delivering innovative solutions across IT, AI, Digital Marketing, and Infrastructure Development.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="solutions.html">Solutions</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Digital Transformation</a></li>
+                        <li><a href="services.html">AI & ML Solutions</a></li>
+                        <li><a href="services.html">Automation & RPA</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                        <li><a href="services.html">Infrastructure</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blogs & Insights</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">White-papers</a></li>
+                        <li><a href="#">Industry Updates</a></li>
+                        <li><a href="#">Technology Trends</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> Admin@jbgglobal.com</li>
+                        <li><i class="fas fa-phone"></i> +91 9063034557</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Kondapur, Hyderabad, Telangana</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 JBG Global Solutions Pvt Ltd. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/expo-3d.js"></script>
+    <script>
+        function createStarfield() {
+            const starfield = document.getElementById('starfield');
+            if (!starfield) return;
+            for (let i = 0; i < 150; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.setProperty('--duration', (Math.random() * 3 + 2) + 's');
+                star.style.animationDelay = Math.random() * 3 + 's';
+                starfield.appendChild(star);
+            }
+        }
+        
+        function createParticles() {
+            const particles = document.getElementById('particles');
+            if (!particles) return;
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDuration = (Math.random() * 20 + 10) + 's';
+                particle.style.animationDelay = Math.random() * 10 + 's';
+                particles.appendChild(particle);
+            }
+        }
+        
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            createStarfield();
+            createParticles();
+        });
+    </script>
+    <script src="assets/js/chatbot.js"></script>
+</body>
+</html>

@@ -1,0 +1,626 @@
+/* ============================================
+   ENHANCED BACKGROUNDS & VISIBILITY
+   Modern Attractive Backgrounds with High Contrast
+   Hero Section Background Image Preserved
+   ============================================ */
+
+/* IT Consulting Services - Blue Gradient with Border */
+.consulting.it,
+.it-consulting,
+section[id*="it-services"],
+section.consulting.it-services {
+    background: linear-gradient(135deg, #1a1a3e 0%, #0f0f1e 50%, #000000 100%) !important;
+    border-top: 1px solid rgba(59, 130, 246, 0.3) !important;
+    border-bottom: 1px solid rgba(59, 130, 246, 0.3) !important;
+}
+
+/* Non-IT Services - Purple Gradient */
+.consulting:not(.it):not(.it-services),
+.non-it-services,
+section.consulting.non-it {
+    background: linear-gradient(180deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%) !important;
+    border-top: 1px solid rgba(139, 92, 246, 0.3) !important;
+    border-bottom: 1px solid rgba(139, 92, 246, 0.3) !important;
+}
+
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.15;
+    animation: float 20s infinite ease-in-out;
+}
+
+.shape-1 {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    top: -100px;
+    right: -100px;
+    animation-delay: 0s;
+}
+
+.shape-2 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, #06b6d4, #3b82f6);
+    bottom: -50px;
+    left: -50px;
+    animation-delay: 5s;
+}
+
+.shape-3 {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(135deg, #8b5cf6, #ec4899);
+    top: 50%;
+    left: 50%;
+    animation-delay: 10s;
+}
+
+.shape-4 {
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(135deg, #10b981, #06b6d4);
+    top: 20%;
+    right: 20%;
+    animation-delay: 15s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    25% {
+        transform: translate(30px, -30px) scale(1.1);
+    }
+    50% {
+        transform: translate(-20px, 20px) scale(0.9);
+    }
+    75% {
+        transform: translate(20px, 30px) scale(1.05);
+    }
+}
+
+/* Hero Badge */
+.hero-badge {
+    display: inline-block;
+    background: rgba(59, 130, 246, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #60a5fa;
+    margin-bottom: 1.5rem;
+    animation: pulse 3s infinite;
+}
+
+/* Hero Stats Mini */
+.hero-stats-mini {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stat-mini {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.stat-mini:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
+}
+
+.stat-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.stat-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-info strong {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+    line-height: 1;
+}
+
+.stat-info span {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 2px;
+}
+
+/* Hero Visual with Floating Cards */
+.hero-visual {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.floating-card {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    padding: 12px 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    font-weight: 600;
+    color: #1e293b;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    animation: float-card 3s infinite ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.floating-card i {
+    color: #3b82f6;
+    font-size: 1.2rem;
+}
+
+.card-1 {
+    top: 10%;
+    right: -10%;
+    animation-delay: 0s;
+}
+
+.card-2 {
+    bottom: 20%;
+    left: -10%;
+    animation-delay: 1s;
+}
+
+.card-3 {
+    top: 50%;
+    right: -5%;
+    animation-delay: 2s;
+}
+
+@keyframes float-card {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Section Decorations */
+.section-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.deco-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+    filter: blur(40px);
+}
+
+.deco-1 {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    right: 10%;
+}
+
+.deco-2 {
+    width: 400px;
+    height: 400px;
+    bottom: -150px;
+    left: 5%;
+}
+
+/* Section Badge */
+.section-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #3b82f6;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+/* Premium Card Design */
+.premium-card {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.premium-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.premium-card:hover::before {
+    left: 100%;
+}
+
+.premium-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 60px rgba(59, 130, 246, 0.3);
+    border-color: rgba(59, 130, 246, 0.5);
+}
+
+.card-shine {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+    transform: rotate(45deg);
+    transition: all 0.6s ease;
+}
+
+.premium-card:hover .card-shine {
+    left: 100%;
+}
+
+/* Technology Brands Showcase */
+.tech-brands-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+    padding: 3rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.brand-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.brand-logo {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #3b82f6;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.brand-item span {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.brand-item:hover .brand-logo {
+    transform: translateY(-10px) scale(1.1) rotate(5deg);
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    box-shadow: 0 15px 40px rgba(59, 130, 246, 0.4);
+    color: white;
+}
+
+.brand-item:hover span {
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Advanced Gradient Overlays */
+.gradient-overlay-1 {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.9), rgba(139, 92, 246, 0.9));
+}
+
+.gradient-overlay-2 {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.9), rgba(6, 182, 212, 0.9));
+}
+
+.gradient-overlay-3 {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.9), rgba(236, 72, 153, 0.9));
+}
+
+/* Animated Button Enhancements */
+.btn {
+    position: relative;
+    overflow: hidden;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* Premium Service Icon */
+.service-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.premium-card:hover .service-icon {
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 0 15px 40px rgba(59, 130, 246, 0.5);
+}
+
+/* Advanced Typography */
+h1, h2, h3 {
+    background: linear-gradient(135deg, #ffffff, #e2e8f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Parallax Scroll Effects */
+.parallax-section {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-stats-mini {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .floating-card {
+        display: none;
+    }
+    
+    .shape {
+        display: none;
+    }
+    
+    .tech-brands-showcase {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+}
+
+/* ============================================
+   ENHANCED SECTION BACKGROUNDS
+   ============================================ */
+
+/* Stats Section */
+.stats {
+    background: linear-gradient(180deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%) !important;
+    border-top: 1px solid rgba(59, 130, 246, 0.3) !important;
+    border-bottom: 1px solid rgba(59, 130, 246, 0.3) !important;
+}
+
+.stat-number {
+    color: #ffffff !important;
+    text-shadow: 0 2px 10px rgba(59, 130, 246, 0.6) !important;
+}
+
+.stat-label {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Core Services */
+.services,
+section.services {
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+        linear-gradient(135deg, #050505 0%, #1a1a2e 50%, #0a0a0a 100%) !important;
+}
+
+/* Best Services */
+.best-services {
+    background: linear-gradient(180deg, #0a0a0a 0%, #1a1a3e 30%, #1a1a2e 70%, #0a0a0a 100%) !important;
+    border-top: 1px solid rgba(34, 211, 238, 0.3) !important;
+    border-bottom: 1px solid rgba(34, 211, 238, 0.3) !important;
+}
+
+/* Tech Stack */
+.tech-stack {
+    background: 
+        radial-gradient(ellipse at center, rgba(168, 85, 247, 0.12) 0%, transparent 50%),
+        linear-gradient(180deg, #0f0f1e 0%, #0a0a0a 100%) !important;
+    border-top: 1px solid rgba(168, 85, 247, 0.4) !important;
+}
+
+/* Industry Verticals */
+.industry-verticals {
+    background: 
+        repeating-linear-gradient(0deg, transparent, transparent 50px, rgba(59, 130, 246, 0.04) 50px, rgba(59, 130, 246, 0.04) 51px),
+        repeating-linear-gradient(90deg, transparent, transparent 50px, rgba(59, 130, 246, 0.04) 50px, rgba(59, 130, 246, 0.04) 51px),
+        linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%) !important;
+    border-top: 1px solid rgba(59, 130, 246, 0.3) !important;
+}
+
+/* Why Us */
+.why-choose-us,
+.why-us {
+    background: 
+        radial-gradient(circle at center, rgba(34, 211, 238, 0.12) 0%, transparent 60%),
+        linear-gradient(180deg, #0a0a0a 0%, #0f0f1e 50%, #0a0a0a 100%) !important;
+    border-top: 1px solid rgba(34, 211, 238, 0.3) !important;
+}
+
+/* Portfolio */
+.portfolio {
+    background: 
+        radial-gradient(ellipse at top left, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at bottom right, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+        linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%) !important;
+    border-top: 1px solid rgba(139, 92, 246, 0.3) !important;
+}
+
+/* Team */
+.team-section,
+.team {
+    background: 
+        radial-gradient(ellipse at top, rgba(168, 85, 247, 0.15) 0%, transparent 50%),
+        linear-gradient(180deg, #1a1a2e 0%, #0a0a0a 100%) !important;
+    border-top: 1px solid rgba(168, 85, 247, 0.3) !important;
+}
+
+/* Testimonials */
+.testimonials {
+    background: 
+        radial-gradient(circle at 30% 40%, rgba(34, 211, 238, 0.1) 0%, transparent 50%),
+        linear-gradient(135deg, #0a0a0a 0%, #1a1a3e 50%, #0a0a0a 100%) !important;
+    border-top: 1px solid rgba(34, 211, 238, 0.3) !important;
+}
+
+/* CTA */
+section.cta {
+    background: 
+        radial-gradient(circle at 30%, rgba(168, 85, 247, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 70%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+        linear-gradient(135deg, #1a1a3e 0%, #0a0a0a 50%, #000000 100%) !important;
+    border-top: 2px solid rgba(168, 85, 247, 0.4) !important;
+    border-bottom: 2px solid rgba(59, 130, 246, 0.4) !important;
+}
+
+/* Contact */
+.contact {
+    background: linear-gradient(180deg, #0f0f1e 0%, #0a0a0a 50%, #000000 100%) !important;
+    border-top: 1px solid rgba(59, 130, 246, 0.3) !important;
+}
+
+/* Footer */
+footer {
+    background: 
+        radial-gradient(ellipse at top center, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+        linear-gradient(180deg, #0f0f1e 0%, #000000 100%) !important;
+    border-top: 2px solid rgba(59, 130, 246, 0.4) !important;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+footer a:hover {
+    color: #3b82f6 !important;
+}
+
+/* ============================================
+   TEXT VISIBILITY ENHANCEMENTS
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff !important;
+    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.9) !important;
+}
+
+p, li, span {
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7) !important;
+}
+
+.section-header h2 {
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.9), 0 0 40px rgba(255, 255, 255, 0.2) !important;
+}
+
+.consulting-card p,
+.service-card p,
+.best-card p {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Card Hover States */
+.service-card:hover,
+.consulting-card:hover,
+.best-card:hover {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-color: rgba(59, 130, 246, 0.4) !important;
+    box-shadow: 0 8px 30px rgba(59, 130, 246, 0.25) !important;
+}
+    }
+    
+    .brand-logo {
+        width: 60px;
+        height: 60px;
+        font-size: 1.8rem;
+    }
+}

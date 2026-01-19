@@ -1,0 +1,541 @@
+/* ============================================
+   PROFESSIONAL ENTERPRISE DESIGN
+   Premium, clean, and modern
+   ============================================ */
+
+/* Reset and force visibility */
+section {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Clean white sections */
+section.demo-video,
+section.consulting.it,
+section.services,
+section.features,
+section.tech-stack,
+section.portfolio,
+section.testimonials,
+section.process,
+section.industry-verticals,
+section.contact,
+section.why-us,
+section.quick-contact:not(.cta) {
+    background: #ffffff !important;
+    padding: 5rem 2rem !important;
+    position: relative !important;
+}
+
+/* Subtle gray alternating sections */
+section.consulting.non-it,
+section.best-services,
+section.team,
+section.technologies,
+section.offerings {
+    background: #f8fafc !important;
+    padding: 5rem 2rem !important;
+    position: relative !important;
+}
+
+/* Premium stats section */
+section.stats {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%) !important;
+    padding: 5rem 2rem !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+section.stats::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background: url('data:image/svg+xml,<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="1.5" fill="rgba(255,255,255,0.1)"/></svg>') !important;
+    opacity: 0.3 !important;
+}
+
+/* Grid layouts */
+.consulting-grid,
+.service-grid,
+.best-services-grid,
+.features-grid,
+.offerings-grid,
+.why-grid,
+.tech-grid,
+.team-grid,
+.testimonials-grid,
+.verticals-grid,
+.portfolio-grid {
+    display: grid !important;
+    gap: 2rem !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    visibility: visible !important;
+}
+
+.consulting-grid,
+.service-grid,
+.best-services-grid,
+.features-grid,
+.verticals-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+}
+
+.stats-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+    gap: 2.5rem !important;
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+}
+
+/* Professional card design */
+.consulting-card,
+.service-card,
+.best-card,
+.premium-card,
+.feature-card,
+.offering-card,
+.tech-card,
+.why-card,
+.portfolio-item,
+.team-member,
+.testimonial-card,
+.process-step,
+.vertical-card,
+.tech-group {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    padding: 2rem !important;
+    transition: all 0.3s ease !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+    position: relative !important;
+    cursor: pointer !important;
+}
+
+.consulting-card:hover,
+.service-card:hover,
+.best-card:hover,
+.premium-card:hover,
+.feature-card:hover,
+.offering-card:hover,
+.why-card:hover,
+.team-member:hover,
+.testimonial-card:hover,
+.vertical-card:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1) !important;
+    border-color: #6366f1 !important;
+}
+
+/* Card content */
+.consulting-card h3,
+.service-card h3,
+.best-card h3,
+.premium-card h3,
+.feature-card h3,
+.offering-card h3,
+.why-card h3,
+.tech-group h3,
+.team-member h3,
+.vertical-card h3 {
+    color: #0f172a !important;
+    margin: 1rem 0 0.75rem !important;
+    font-size: 1.35rem !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+}
+
+.consulting-card p,
+.service-card p,
+.best-card p,
+.premium-card p,
+.feature-card p,
+.offering-card p,
+.why-card p,
+.tech-group p,
+.team-member p,
+.vertical-card p {
+    color: #64748b !important;
+    line-height: 1.6 !important;
+    margin-bottom: 1rem !important;
+    font-size: 0.95rem !important;
+}
+
+/* Icon styling */
+.consulting-card i,
+.service-card i,
+.best-card i,
+.card-icon i,
+.service-icon i,
+.feature-card i,
+.offering-card i,
+.why-card i,
+.vertical-card i,
+.process-step i,
+.tech-group i {
+    font-size: 2.5rem !important;
+    color: #6366f1 !important;
+    display: block !important;
+    margin-bottom: 1rem !important;
+    transition: all 0.3s ease !important;
+}
+
+.consulting-card:hover i,
+.service-card:hover i,
+.best-card:hover i,
+.feature-card:hover i,
+.offering-card:hover i,
+.why-card:hover i {
+    transform: scale(1.1) !important;
+    color: #4f46e5 !important;
+}
+
+/* Professional stat cards */
+.stat-item,
+.stat-card {
+    background: rgba(255, 255, 255, 0.1) !important;
+    padding: 2rem 1.5rem !important;
+    border-radius: 12px !important;
+    text-align: center !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(10px) !important;
+    transition: all 0.3s ease !important;
+}
+
+.stat-item:hover,
+.stat-card:hover {
+    transform: translateY(-4px) !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+}
+
+.stat-number {
+    font-size: 2.75rem !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    display: block !important;
+    margin-bottom: 0.5rem !important;
+    line-height: 1 !important;
+}
+
+.stat-label {
+    font-size: 0.9rem !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* Section headers */
+.section-header {
+    text-align: center !important;
+    margin-bottom: 3.5rem !important;
+    max-width: 700px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.section-header h2 {
+    font-size: 2.5rem !important;
+    font-weight: 800 !important;
+    color: #0f172a !important;
+    margin-bottom: 1rem !important;
+    letter-spacing: -0.5px !important;
+    line-height: 1.2 !important;
+}
+
+.section-header p {
+    font-size: 1.05rem !important;
+    color: #64748b !important;
+    line-height: 1.7 !important;
+}
+
+/* Professional buttons */
+.consulting-card .btn,
+.service-card .btn,
+.best-card .btn,
+.premium-card .btn,
+.btn-primary,
+.cta-button {
+    display: inline-block !important;
+    padding: 0.875rem 2rem !important;
+    background: #6366f1 !important;
+    color: white !important;
+    text-decoration: none !important;
+    border-radius: 8px !important;
+    margin-top: 1rem !important;
+    transition: all 0.3s ease !important;
+    font-weight: 600 !important;
+    border: none !important;
+    font-size: 0.95rem !important;
+    cursor: pointer !important;
+}
+
+.consulting-card .btn:hover,
+.service-card .btn:hover,
+.best-card .btn:hover,
+.premium-card .btn:hover,
+.btn-primary:hover,
+.cta-button:hover {
+    background: #4f46e5 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4) !important;
+}
+
+/* Container visibility */
+.container,
+.services-container,
+section:not(.hero) .section-header,
+section:not(.hero) .consulting-grid,
+section:not(.hero) .service-grid,
+section:not(.hero) .best-services-grid,
+section:not(.hero) .features-grid,
+section:not(.hero) .offerings-grid,
+section:not(.hero) .stats-grid,
+section:not(.hero) .tech-grid,
+section:not(.hero) .team-grid,
+section:not(.hero) .testimonials-grid,
+section:not(.hero) .verticals-grid,
+section:not(.hero) .portfolio-grid,
+section:not(.hero) .why-grid,
+section:not(.hero) .tech-groups {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Card images */
+.consulting-card img,
+.service-card img,
+.portfolio-item img,
+.team-member img {
+    width: 100% !important;
+    border-radius: 8px !important;
+    margin-bottom: 1rem !important;
+}
+
+.team-member img {
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    margin: 0 auto 1rem !important;
+    display: block !important;
+}
+
+/* Testimonial styling */
+.testimonial-card {
+    text-align: center !important;
+}
+
+.testimonial-card .stars {
+    color: #f59e0b !important;
+    font-size: 1.2rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.testimonial-card .author {
+    font-weight: 600 !important;
+    color: #0f172a !important;
+    margin-top: 1rem !important;
+}
+
+.testimonial-card .position {
+    color: #64748b !important;
+    font-size: 0.85rem !important;
+}
+
+/* Process steps */
+.process-step {
+    text-align: center !important;
+    position: relative !important;
+}
+
+.process-step .step-number {
+    width: 60px !important;
+    height: 60px !important;
+    background: #6366f1 !important;
+    color: white !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto 1rem !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+}
+
+/* Tech stack */
+.tech-brands-showcase {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
+    gap: 2rem !important;
+    margin-top: 2rem !important;
+}
+
+.brand-item {
+    text-align: center !important;
+    padding: 1.5rem !important;
+    background: white !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+}
+
+.brand-item:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
+}
+
+.brand-item img {
+    max-width: 100px !important;
+    height: auto !important;
+    margin-bottom: 0.5rem !important;
+}
+
+/* Contact form */
+.contact-form {
+    max-width: 600px !important;
+    margin: 0 auto !important;
+}
+
+.form-group {
+    margin-bottom: 1.5rem !important;
+}
+
+.form-group label {
+    display: block !important;
+    margin-bottom: 0.5rem !important;
+    color: #0f172a !important;
+    font-weight: 600 !important;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100% !important;
+    padding: 0.875rem !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+    font-size: 0.95rem !important;
+    transition: all 0.3s ease !important;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none !important;
+    border-color: #6366f1 !important;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1) !important;
+}
+
+/* CTA Section */
+section.cta {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%) !important;
+    color: white !important;
+    text-align: center !important;
+    padding: 5rem 2rem !important;
+}
+
+section.cta h2 {
+    color: white !important;
+    font-size: 2.5rem !important;
+    margin-bottom: 1rem !important;
+}
+
+section.cta p {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 1.1rem !important;
+    margin-bottom: 2rem !important;
+}
+
+section.cta .cta-button {
+    background: white !important;
+    color: #6366f1 !important;
+    padding: 1rem 2.5rem !important;
+    font-size: 1.05rem !important;
+}
+
+section.cta .cta-button:hover {
+    background: #f8fafc !important;
+    transform: translateY(-2px) scale(1.05) !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    section {
+        padding: 3rem 1rem !important;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem !important;
+    }
+    
+    .consulting-grid,
+    .service-grid,
+    .best-services-grid,
+    .features-grid,
+    .verticals-grid,
+    .stats-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+    
+    .stat-number {
+        font-size: 2.25rem !important;
+    }
+}
+
+/* Portfolio filtering */
+.portfolio-filter {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 1rem !important;
+    margin-bottom: 2rem !important;
+    flex-wrap: wrap !important;
+}
+
+.filter-btn {
+    padding: 0.75rem 1.5rem !important;
+    background: white !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    font-weight: 600 !important;
+    color: #64748b !important;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #6366f1 !important;
+    color: white !important;
+    border-color: #6366f1 !important;
+}
+
+/* Smooth animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.consulting-card,
+.service-card,
+.best-card,
+.feature-card,
+.stat-card,
+.team-member {
+    animation: fadeInUp 0.6s ease-out !important;
+}
