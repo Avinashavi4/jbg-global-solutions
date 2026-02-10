@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JBG Global Solutions - Transforming Businesses Through Technology</title>
+    <meta name="description" content="JBG Global Solutions - Global transformation partner delivering innovative solutions across IT, AI, Quantum AI, Digital Marketing, and Infrastructure Development">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/expo-3d.css">
+    <link rel="stylesheet" href="assets/css/globe-3d.css">
+    <link rel="stylesheet" href="assets/css/partners.css">
+    <link rel="stylesheet" href="assets/css/dark-blue-option2.css">
+    <link rel="stylesheet" href="assets/css/jbg-logo.css">
+    <link rel="stylesheet" href="assets/css/chatbot.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body>
+
+    <!-- 3D Animated Background System -->
+    <div class="bg-system">
+        <div class="starfield" id="starfield"></div>
+        <div class="nebula nebula-1"></div>
+        <div class="nebula nebula-2"></div>
+        <div class="nebula nebula-3"></div>
+        <div class="grid-floor"></div>
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo jbg-logo-container">
+                <div class="logo-icon jbg-logo">
+                    <object type="image/svg+xml" data="assets/images/jbg-logo.svg" class="jbg-animated-svg">JBG</object>
+                </div>
+                <div class="logo-text">
+                    <span class="brand">JBG Global</span>
+                    <span class="tagline">Solutions Pvt Ltd</span>
+                </div>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html" class="nav-cta">Talk to Experts</a></li>
+            </ul>
+            
+            <button class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content-wrapper">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <i class="fas fa-rocket"></i>
+                            <span>Global Transformation Partner</span>
+                        </div>
+                        
+                        <h1 class="hero-title" style="overflow: visible;">
+                            <span class="line" style="display: block; opacity: 1; visibility: visible; white-space: nowrap;">Transforming</span>
+                            <span class="line" style="display: block; opacity: 1; visibility: visible; background: linear-gradient(135deg, #3b82f6, #60a5fa, #93c5fd); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Businesses</span>
+                            <span class="line" style="display: block; opacity: 1; visibility: visible; background: linear-gradient(135deg, #3b82f6, #60a5fa, #93c5fd); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Through</span>
+                            <span class="line highlight" style="display: block; opacity: 1; visibility: visible;">Technology &</span>
+                            <span class="line highlight" style="display: block; opacity: 1; visibility: visible;">Innovation</span>
+                        </h1>
+                        
+                        <p class="hero-description">
+                            JBG Global Solutions is a global transformation partner delivering innovative solutions across <strong>IT, AI & Quantum AI, Digital Marketing, Non-IT Services,</strong> and <strong>Interior Infrastructure Development</strong>. We help organizations accelerate growth, optimize operations, and build future-ready ecosystems.
+                        </p>
+                        
+                        <div class="hero-buttons">
+                            <a href="contact.html" class="btn btn-primary pulse-glow">
+                                <i class="fas fa-comments"></i>
+                                <span>Talk to Our Experts</span>
+                            </a>
+                            <a href="services.html" class="btn btn-secondary">
+                                <i class="fas fa-play-circle"></i>
+                                <span>Get Started</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-visual">
+                        <div class="hero-3d-scene">
+                            <!-- Ultimate 3D Globe System -->
+                            <div class="globe-container">
+                                <!-- Outer Glow -->
+                                <div class="globe-outer-glow"></div>
+                                
+                                <!-- Main Globe -->
+                                <div class="main-globe">
+                                    <!-- Globe Surface with Grid Lines -->
+                                    <div class="globe-surface">
+                                        <div class="globe-grid"></div>
+                                        <div class="globe-continent c1"></div>
+                                        <div class="globe-continent c2"></div>
+                                        <div class="globe-continent c3"></div>
+                                    </div>
+                                    
+                                    <!-- Central Core -->
+                                    <div class="globe-core">
+                                        <div class="core-inner">
+                                            <span class="core-jbg">JBG</span>
+                                            <span class="core-global">GLOBAL</span>
+                                            <span class="core-tag">SOLUTIONS</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Holographic Rings -->
+                                    <div class="holo-ring hr-1"></div>
+                                    <div class="holo-ring hr-2"></div>
+                                    <div class="holo-ring hr-3"></div>
+                                </div>
+                                
+                                <!-- Rotating Tech Orbit System -->
+                                <div class="tech-orbit-system">
+                                    <!-- Inner Orbit - AI/ML -->
+                                    <div class="tech-orbit orbit-inner">
+                                        <div class="tech-node tn-ai" data-tech="Artificial Intelligence">
+                                            <div class="node-inner">
+                                                <i class="fas fa-brain"></i>
+                                            </div>
+                                            <span class="node-name">AI</span>
+                                        </div>
+                                        <div class="tech-node tn-ml" data-tech="Machine Learning">
+                                            <div class="node-inner">
+                                                <i class="fas fa-microchip"></i>
+                                            </div>
+                                            <span class="node-name">ML</span>
+                                        </div>
+                                        <div class="tech-node tn-quantum" data-tech="Quantum Computing">
+                                            <div class="node-inner">
+                                                <i class="fas fa-atom"></i>
+                                            </div>
+                                            <span class="node-name">Quantum</span>
+                                        </div>
+                                        <div class="tech-node tn-neural" data-tech="Neural Networks">
+                                            <div class="node-inner">
+                                                <i class="fas fa-network-wired"></i>
+                                            </div>
+                                            <span class="node-name">Neural</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Middle Orbit - Cloud/Data -->
+                                    <div class="tech-orbit orbit-middle">
+                                        <div class="tech-node tn-cloud" data-tech="Cloud Computing">
+                                            <div class="node-inner">
+                                                <i class="fas fa-cloud"></i>
+                                            </div>
+                                            <span class="node-name">Cloud</span>
+                                        </div>
+                                        <div class="tech-node tn-data" data-tech="Big Data Analytics">
+                                            <div class="node-inner">
+                                                <i class="fas fa-database"></i>
+                                            </div>
+                                            <span class="node-name">Data</span>
+                                        </div>
+                                        <div class="tech-node tn-cyber" data-tech="Cybersecurity">
+                                            <div class="node-inner">
+                                                <i class="fas fa-shield-alt"></i>
+                                            </div>
+                                            <span class="node-name">Security</span>
+                                        </div>
+                                        <div class="tech-node tn-blockchain" data-tech="Blockchain">
+                                            <div class="node-inner">
+                                                <i class="fas fa-link"></i>
+                                            </div>
+                                            <span class="node-name">Blockchain</span>
+                                        </div>
+                                        <div class="tech-node tn-devops" data-tech="DevOps & CI/CD">
+                                            <div class="node-inner">
+                                                <i class="fas fa-infinity"></i>
+                                            </div>
+                                            <span class="node-name">DevOps</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Outer Orbit - Services -->
+                                    <div class="tech-orbit orbit-outer">
+                                        <div class="tech-node tn-rpa" data-tech="Robotic Automation">
+                                            <div class="node-inner">
+                                                <i class="fas fa-robot"></i>
+                                            </div>
+                                            <span class="node-name">RPA</span>
+                                        </div>
+                                        <div class="tech-node tn-iot" data-tech="Internet of Things">
+                                            <div class="node-inner">
+                                                <i class="fas fa-wifi"></i>
+                                            </div>
+                                            <span class="node-name">IoT</span>
+                                        </div>
+                                        <div class="tech-node tn-api" data-tech="API Integration">
+                                            <div class="node-inner">
+                                                <i class="fas fa-plug"></i>
+                                            </div>
+                                            <span class="node-name">API</span>
+                                        </div>
+                                        <div class="tech-node tn-mobile" data-tech="Mobile Development">
+                                            <div class="node-inner">
+                                                <i class="fas fa-mobile-alt"></i>
+                                            </div>
+                                            <span class="node-name">Mobile</span>
+                                        </div>
+                                        <div class="tech-node tn-web" data-tech="Web Development">
+                                            <div class="node-inner">
+                                                <i class="fas fa-globe"></i>
+                                            </div>
+                                            <span class="node-name">Web</span>
+                                        </div>
+                                        <div class="tech-node tn-erp" data-tech="ERP Solutions">
+                                            <div class="node-inner">
+                                                <i class="fas fa-cubes"></i>
+                                            </div>
+                                            <span class="node-name">ERP</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Data Streams -->
+                                <div class="data-streams">
+                                    <div class="data-stream ds-1"></div>
+                                    <div class="data-stream ds-2"></div>
+                                    <div class="data-stream ds-3"></div>
+                                    <div class="data-stream ds-4"></div>
+                                    <div class="data-stream ds-5"></div>
+                                    <div class="data-stream ds-6"></div>
+                                </div>
+                                
+                                <!-- Particle Field -->
+                                <div class="particle-field">
+                                    <div class="particle p1"></div>
+                                    <div class="particle p2"></div>
+                                    <div class="particle p3"></div>
+                                    <div class="particle p4"></div>
+                                    <div class="particle p5"></div>
+                                    <div class="particle p6"></div>
+                                    <div class="particle p7"></div>
+                                    <div class="particle p8"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Floating Status Cards - Removed for cleaner design -->
+                            
+                            <!-- Tech Logo Orbit -->
+                            <div class="tech-logos-orbit">
+                                <div class="tech-logo tl-1">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                                </div>
+                                <div class="tech-logo tl-2">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                                </div>
+                                <div class="tech-logo tl-3">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS">
+                                </div>
+                                <div class="tech-logo tl-4">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure">
+                                </div>
+                                <div class="tech-logo tl-5">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
+                                </div>
+                                <div class="tech-logo tl-6">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to Explore</span>
+        </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="section who-we-are" id="who-we-are">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-users"></i>
+                    Who We Are
+                </span>
+                <h2 class="section-title">
+                    One of the <span class="gradient-text">Fastest-Growing</span> Global Companies
+                </h2>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="lead-text">
+                        JBG Global Solutions is one of the fastest-growing global services and solutions companies, enabling enterprises to transform digitally and operationally through cutting-edge technologies and smart infrastructure.
+                    </p>
+                    <p class="description-text">
+                        With a strong global delivery model and deep industry expertise, we help businesses design, build, automate, and scale with confidence.
+                    </p>
+                    <a href="about.html" class="btn btn-outline">
+                        <span>Learn More About Us</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="assets/images/about-image.jpg" alt="JBG Global Solutions Team">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <div class="badge-number">15+</div>
+                        <div class="badge-text">Years of Excellence</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section class="section services-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-cog"></i>
+                    What We Do
+                </span>
+                <h2 class="section-title">
+                    Comprehensive <span class="gradient-text">Solutions</span> For Growth
+                </h2>
+                <p class="section-subtitle">
+                    Enabling enterprises to achieve speed, efficiency, and scalability through innovative solutions
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="service-title">Digital & Enterprise Transformation</h3>
+                        <p class="service-description">
+                            Complete digital overhaul and enterprise solutions to modernize your business operations
+                        </p>
+                        <div class="service-features">
+                            <span><i class="fas fa-check"></i> Application Development</span>
+                            <span><i class="fas fa-check"></i> Modernization</span>
+                            <span><i class="fas fa-check"></i> Cloud Migration</span>
+                        </div>
+                        <a href="services.html" class="service-link">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card featured">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="service-title">AI, ML & Quantum AI Solutions</h3>
+                        <p class="service-description">
+                            Harness the power of artificial intelligence and quantum computing for breakthrough results
+                        </p>
+                        <div class="service-features">
+                            <span><i class="fas fa-check"></i> Machine Learning</span>
+                            <span><i class="fas fa-check"></i> Quantum AI</span>
+                            <span><i class="fas fa-check"></i> Deep Learning</span>
+                        </div>
+                        <a href="services.html" class="service-link">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="service-title">Automation & Analytics</h3>
+                        <p class="service-description">
+                            RPA, intelligent document processing, and data-driven analytics for operational excellence
+                        </p>
+                        <div class="service-features">
+                            <span><i class="fas fa-check"></i> RPA Solutions</span>
+                            <span><i class="fas fa-check"></i> Document Processing</span>
+                            <span><i class="fas fa-check"></i> QA Automation</span>
+                        </div>
+                        <a href="services.html" class="service-link">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="service-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3 class="service-title">Digital Marketing & Growth</h3>
+                        <p class="service-description">
+                            Data-driven marketing strategies to accelerate brand growth and customer engagement
+                        </p>
+                        <div class="service-features">
+                            <span><i class="fas fa-check"></i> SEO & SEM</span>
+                            <span><i class="fas fa-check"></i> Social Media</span>
+                            <span><i class="fas fa-check"></i> Content Strategy</span>
+                        </div>
+                        <a href="services.html" class="service-link">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="service-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3 class="service-title">Non-IT & Managed Services</h3>
+                        <p class="service-description">
+                            Reliable support services enabling clients to focus on core business operations
+                        </p>
+                        <div class="service-features">
+                            <span><i class="fas fa-check"></i> Business Support</span>
+                            <span><i class="fas fa-check"></i> Staffing</span>
+                            <span><i class="fas fa-check"></i> Compliance</span>
+                        </div>
+                        <a href="services.html" class="service-link">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="service-title">Interior & Infrastructure Development</h3>
+                        <p class="service-description">
+                            End-to-end interior and infrastructure services for commercial and enterprise environments
+                        </p>
+                        <div class="service-features">
+                            <span><i class="fas fa-check"></i> Office Interiors</span>
+                            <span><i class="fas fa-check"></i> IT Parks</span>
+                            <span><i class="fas fa-check"></i> Turnkey Execution</span>
+                        </div>
+                        <a href="services.html" class="service-link">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section why-us-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-star"></i>
+                    Why Choose Us
+                </span>
+                <h2 class="section-title">
+                    What Sets Us <span class="gradient-text">Apart</span>
+                </h2>
+            </div>
+            
+            <div class="why-us-grid">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Global Delivery Model</h3>
+                    <p>Onshore & offshore teams ensuring agility and round-the-clock productivity</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Multi-Domain Expertise</h3>
+                    <p>IT, AI, Digital Marketing & Infrastructure under one roof</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Faster Time-to-Market</h3>
+                    <p>Agile methodologies for rapid deployment and quick results</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-expand-arrows-alt"></i></div>
+                    <h3>Scalable Solutions</h3>
+                    <p>Future-ready platforms that grow with your business</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Customer-Centric Model</h3>
+                    <p>Partnership approach focused on your success</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-award"></i></div>
+                    <h3>Proven Excellence</h3>
+                    <p>Track record of quality delivery and execution</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Serve Section -->
+    <section class="section clients-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-building"></i>
+                    Who We Serve
+                </span>
+                <h2 class="section-title">
+                    Trusted by <span class="gradient-text">Industry Leaders</span>
+                </h2>
+            </div>
+            
+            <div class="clients-grid">
+                <div class="client-type">
+                    <div class="client-icon"><i class="fas fa-city"></i></div>
+                    <h3>Enterprises & Large Organizations</h3>
+                </div>
+                <div class="client-type">
+                    <div class="client-icon"><i class="fas fa-building"></i></div>
+                    <h3>Mid-Market Companies</h3>
+                </div>
+                <div class="client-type">
+                    <div class="client-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Startups & Scale-ups</h3>
+                </div>
+                <div class="client-type">
+                    <div class="client-icon"><i class="fas fa-landmark"></i></div>
+                    <h3>Government & Public Sector</h3>
+                </div>
+                <div class="client-type">
+                    <div class="client-icon"><i class="fas fa-home"></i></div>
+                    <h3>Real Estate & Infrastructure</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack Section -->
+    <section class="section tech-stack-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-layer-group"></i>
+                    Technology Stack
+                </span>
+                <h2 class="section-title">
+                    Powered by <span class="gradient-text">Cutting-Edge Technologies</span>
+                </h2>
+                <p class="section-subtitle">
+                    We leverage the latest technologies and frameworks to build scalable, secure, and innovative solutions
+                </p>
+            </div>
+            
+            <div class="tech-showcase">
+                <!-- AI & ML -->
+                <div class="tech-category">
+                    <h4 class="tech-cat-title"><i class="fas fa-brain"></i> AI & Machine Learning</h4>
+                    <div class="tech-items">
+                        <div class="tech-item" data-name="TensorFlow">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
+                        </div>
+                        <div class="tech-item" data-name="PyTorch">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch">
+                        </div>
+                        <div class="tech-item" data-name="Python">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                        </div>
+                        <div class="tech-item" data-name="OpenAI">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="OpenAI">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cloud Platforms -->
+                <div class="tech-category">
+                    <h4 class="tech-cat-title"><i class="fas fa-cloud"></i> Cloud Platforms</h4>
+                    <div class="tech-items">
+                        <div class="tech-item" data-name="AWS">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS">
+                        </div>
+                        <div class="tech-item" data-name="Azure">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure">
+                        </div>
+                        <div class="tech-item" data-name="GCP">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud">
+                        </div>
+                        <div class="tech-item" data-name="Docker">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Development -->
+                <div class="tech-category">
+                    <h4 class="tech-cat-title"><i class="fas fa-code"></i> Development</h4>
+                    <div class="tech-items">
+                        <div class="tech-item" data-name="React">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                        </div>
+                        <div class="tech-item" data-name="Node.js">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                        </div>
+                        <div class="tech-item" data-name="TypeScript">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                        </div>
+                        <div class="tech-item" data-name="Java">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Data & Analytics -->
+                <div class="tech-category">
+                    <h4 class="tech-cat-title"><i class="fas fa-database"></i> Data & Analytics</h4>
+                    <div class="tech-items">
+                        <div class="tech-item" data-name="MongoDB">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                        </div>
+                        <div class="tech-item" data-name="PostgreSQL">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                        </div>
+                        <div class="tech-item" data-name="Kafka">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" alt="Kafka">
+                        </div>
+                        <div class="tech-item" data-name="Redis">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Partners & Clients Section -->
+    <section class="section partners-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-handshake"></i>
+                    Trusted Partners
+                </span>
+                <h2 class="section-title">
+                    Technology <span class="gradient-text">Partners & Alliances</span>
+                </h2>
+                <p class="section-subtitle">
+                    We partner with leading technology providers to deliver best-in-class solutions
+                </p>
+            </div>
+            
+            <div class="partners-marquee">
+                <div class="marquee-track">
+                    <div class="partner-logo">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original-wordmark.svg" alt="Microsoft Azure">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original-wordmark.svg" alt="Google Cloud">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg" alt="Salesforce">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/ServiceNow_logo.svg" alt="ServiceNow">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" alt="Slack">
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="partner-logo">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original-wordmark.svg" alt="Microsoft Azure">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original-wordmark.svg" alt="Google Cloud">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="certifications-grid">
+                <div class="cert-badge">
+                    <div class="cert-icon"><i class="fas fa-award"></i></div>
+                    <span>ISO 27001</span>
+                </div>
+                <div class="cert-badge">
+                    <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+                    <span>SOC 2</span>
+                </div>
+                <div class="cert-badge">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <span>GDPR</span>
+                </div>
+                <div class="cert-badge">
+                    <div class="cert-icon"><i class="fas fa-cloud"></i></div>
+                    <span>AWS Partner</span>
+                </div>
+                <div class="cert-badge">
+                    <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
+                    <span>Azure Partner</span>
+                </div>
+                <div class="cert-badge">
+                    <div class="cert-icon"><i class="fab fa-google"></i></div>
+                    <span>GCP Partner</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Ready to Transform Your Business?</h2>
+                    <p>Partner with us to accelerate growth, optimize operations, and build future-ready ecosystems</p>
+                </div>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone"></i>
+                        <span>Talk to Our Experts</span>
+                    </a>
+                    <a href="services.html" class="btn btn-outline btn-large">
+                        <span>Explore Services</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <object type="image/svg+xml" data="assets/images/jbg-logo.svg" class="footer-jbg-logo" style="width: 50px; height: 50px;">JBG</object>
+                        <span>JBG Global Solutions</span>
+                    </div>
+                    <p class="footer-description">
+                        Global transformation partner delivering innovative solutions across IT, AI, Digital Marketing, and Infrastructure Development.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="solutions.html">Solutions</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Digital Transformation</a></li>
+                        <li><a href="services.html">AI & ML Solutions</a></li>
+                        <li><a href="services.html">Automation & RPA</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                        <li><a href="services.html">Infrastructure</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blogs & Insights</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">White-papers</a></li>
+                        <li><a href="#">Industry Updates</a></li>
+                        <li><a href="#">Technology Trends</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> Admin@jbgglobal.com</li>
+                        <li><i class="fas fa-phone"></i> +91 9063034557</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Kondapur, Hyderabad, Telangana</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 JBG Global Solutions Private Limited. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/expo-3d.js"></script>
+    <script>
+        function createStarfield() {
+            const starfield = document.getElementById('starfield');
+            if (!starfield) return;
+            for (let i = 0; i < 150; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.setProperty('--duration', (Math.random() * 3 + 2) + 's');
+                star.style.animationDelay = Math.random() * 3 + 's';
+                starfield.appendChild(star);
+            }
+        }
+        
+        function createParticles() {
+            const particles = document.getElementById('particles');
+            if (!particles) return;
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDuration = (Math.random() * 20 + 10) + 's';
+                particle.style.animationDelay = Math.random() * 10 + 's';
+                particles.appendChild(particle);
+            }
+        }
+        
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            createStarfield();
+            createParticles();
+        });
+    </script>
+    <script src="assets/js/chatbot.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow backup and documentation files
+Disallow: /backup/
+Disallow: /*.md$
+
+# Sitemap
+Sitemap: https://jbgglobal.com/sitemap.xml

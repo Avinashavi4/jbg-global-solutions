@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - JBG Global Solutions</title>
+    <meta name="description" content="Learn about JBG Global Solutions - one of the fastest-growing multi-domain service organizations delivering integrated solutions across technology, automation, digital, and infrastructure domains.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/expo-3d.css">
+    <link rel="stylesheet" href="assets/css/globe-3d.css">
+    <link rel="stylesheet" href="assets/css/partners.css">
+    <link rel="stylesheet" href="assets/css/dark-blue-option2.css">
+    <link rel="stylesheet" href="assets/css/jbg-logo.css">
+    <link rel="stylesheet" href="assets/css/chatbot.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body>
+
+    <!-- 3D Animated Background System -->
+    <div class="bg-system">
+        <div class="starfield" id="starfield"></div>
+        <div class="nebula nebula-1"></div>
+        <div class="nebula nebula-2"></div>
+        <div class="nebula nebula-3"></div>
+        <div class="grid-floor"></div>
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo jbg-logo-container">
+                <div class="logo-icon jbg-logo">
+                    <object type="image/svg+xml" data="assets/images/jbg-logo.svg" class="jbg-animated-svg">JBG</object>
+                </div>
+                <div class="logo-text">
+                    <span class="brand">JBG Global</span>
+                    <span class="tagline">Solutions Pvt Ltd</span>
+                </div>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html" class="nav-cta">Talk to Experts</a></li>
+            </ul>
+            
+            <button class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <span class="hero-badge">
+                    <i class="fas fa-building"></i>
+                    <span>About Us</span>
+                </span>
+                <h1 class="page-title">
+                    About <span class="gradient-text">JBG Global Solutions</span>
+                </h1>
+                <p class="page-subtitle">
+                    One of the fastest-growing multi-domain service organizations, delivering integrated solutions across technology, automation, digital, and infrastructure domains.
+                </p>
+            </div>
+            
+            <!-- 3D Rotating Tech Cube -->
+            <div class="hero-3d-element">
+                <div class="rotating-cube">
+                    <div class="cube-face cube-front"><i class="fas fa-brain"></i></div>
+                    <div class="cube-face cube-back"><i class="fas fa-cloud"></i></div>
+                    <div class="cube-face cube-right"><i class="fas fa-robot"></i></div>
+                    <div class="cube-face cube-left"><i class="fas fa-shield-alt"></i></div>
+                    <div class="cube-face cube-top"><i class="fas fa-database"></i></div>
+                    <div class="cube-face cube-bottom"><i class="fas fa-code"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Main Section -->
+    <section class="section about-main">
+        <div class="container">
+            <div class="about-intro-grid">
+                <div class="about-intro-content">
+                    <h2 class="section-title">
+                        Our <span class="gradient-text">Story</span>
+                    </h2>
+                    <p class="intro-text">
+                        JBG Global Solutions was founded with a simple yet powerful belief: <em>Technology should simplify business, not complicate it.</em>
+                    </p>
+                    <p class="description">
+                        By combining innovation, execution excellence, and global delivery, we partner with startups, mid-market firms, and large enterprises to solve complex business challenges and unlock sustainable growth.
+                    </p>
+                    <p class="description">
+                        Our teams operate across onshore and offshore locations, ensuring agility, cost efficiency, faster delivery, and round-the-clock productivity.
+                    </p>
+                </div>
+                <div class="about-intro-image">
+                    <div class="image-frame">
+                        <img src="assets/images/hero-1.jpg" alt="JBG Global Solutions">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="section vision-mission">
+        <div class="container">
+            <div class="vm-grid">
+                <!-- Vision Card -->
+                <div class="vm-card vision-card">
+                    <div class="vm-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>
+                        To become a globally trusted transformation partner, delivering intelligent, scalable, and sustainable solutions that shape the future of businesses and communities.
+                    </p>
+                </div>
+                
+                <!-- Mission Card -->
+                <div class="vm-card mission-card">
+                    <div class="vm-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <ul class="mission-list">
+                        <li><i class="fas fa-check-circle"></i> Deliver next-generation digital, AI, and automation solutions</li>
+                        <li><i class="fas fa-check-circle"></i> Enable enterprises to achieve speed, efficiency, and scalability</li>
+                        <li><i class="fas fa-check-circle"></i> Build secure, cloud-ready, and future-proof platforms</li>
+                        <li><i class="fas fa-check-circle"></i> Create long-term value for customers, partners, and society</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section class="section what-we-do">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-cog"></i>
+                    What We Do
+                </span>
+                <h2 class="section-title">
+                    Comprehensive <span class="gradient-text">Capabilities</span>
+                </h2>
+            </div>
+            
+            <div class="capabilities-grid">
+                <div class="capability-item">
+                    <div class="cap-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h4>Digital & Enterprise Transformation</h4>
+                </div>
+                <div class="capability-item">
+                    <div class="cap-icon"><i class="fas fa-brain"></i></div>
+                    <h4>AI, ML & Quantum AI Solutions</h4>
+                </div>
+                <div class="capability-item">
+                    <div class="cap-icon"><i class="fas fa-robot"></i></div>
+                    <h4>Automation & Analytics</h4>
+                </div>
+                <div class="capability-item">
+                    <div class="cap-icon"><i class="fas fa-bullhorn"></i></div>
+                    <h4>Digital Marketing & Growth</h4>
+                </div>
+                <div class="capability-item">
+                    <div class="cap-icon"><i class="fas fa-headset"></i></div>
+                    <h4>Non-IT & Managed Services</h4>
+                </div>
+                <div class="capability-item">
+                    <div class="cap-icon"><i class="fas fa-building"></i></div>
+                    <h4>Interior & Infrastructure Development</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Good Section -->
+    <section class="section social-good">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-heart"></i>
+                    Social Good
+                </span>
+                <h2 class="section-title">
+                    Our <span class="gradient-text">Commitment</span> to Society
+                </h2>
+                <p class="section-subtitle">
+                    At JBG Global Solutions, we believe in responsible growth and community impact.
+                </p>
+            </div>
+            
+            <div class="social-grid">
+                <div class="social-item">
+                    <div class="social-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h4>Digital Skill Development</h4>
+                    <p>Supporting education and digital literacy programs</p>
+                </div>
+                <div class="social-item">
+                    <div class="social-icon"><i class="fas fa-leaf"></i></div>
+                    <h4>Sustainable Practices</h4>
+                    <p>Promoting sustainable infrastructure and operations</p>
+                </div>
+                <div class="social-item">
+                    <div class="social-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h4>Innovation & Employment</h4>
+                    <p>Encouraging innovation and creating job opportunities</p>
+                </div>
+                <div class="social-item">
+                    <div class="social-icon"><i class="fas fa-handshake"></i></div>
+                    <h4>Ethical Business</h4>
+                    <p>Ethical, inclusive, and responsible business practices</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Ready to Partner with Us?</h2>
+                    <p>Let's transform your business together with cutting-edge solutions</p>
+                </div>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone"></i>
+                        <span>Talk to Our Experts</span>
+                    </a>
+                    <a href="services.html" class="btn btn-outline btn-large">
+                        <span>Explore Services</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <object type="image/svg+xml" data="assets/images/jbg-logo.svg" class="footer-jbg-logo" style="width: 50px; height: 50px;">JBG</object>
+                        <span>JBG Global Solutions</span>
+                    </div>
+                    <p class="footer-description">
+                        Global transformation partner delivering innovative solutions across IT, AI, Digital Marketing, and Infrastructure Development.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="solutions.html">Solutions</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Digital Transformation</a></li>
+                        <li><a href="services.html">AI & ML Solutions</a></li>
+                        <li><a href="services.html">Automation & RPA</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                        <li><a href="services.html">Infrastructure</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blogs & Insights</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">White-papers</a></li>
+                        <li><a href="#">Industry Updates</a></li>
+                        <li><a href="#">Technology Trends</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> Admin@jbgglobal.com</li>
+                        <li><i class="fas fa-phone"></i> +91 9063034557</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Kondapur, Hyderabad, Telangana</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 JBG Global Solutions Private Limited. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/expo-3d.js"></script>
+    <script>
+        function createStarfield() {
+            const starfield = document.getElementById('starfield');
+            if (!starfield) return;
+            for (let i = 0; i < 150; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.setProperty('--duration', (Math.random() * 3 + 2) + 's');
+                star.style.animationDelay = Math.random() * 3 + 's';
+                starfield.appendChild(star);
+            }
+        }
+        
+        function createParticles() {
+            const particles = document.getElementById('particles');
+            if (!particles) return;
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDuration = (Math.random() * 20 + 10) + 's';
+                particle.style.animationDelay = Math.random() * 10 + 's';
+                particles.appendChild(particle);
+            }
+        }
+        
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            createStarfield();
+            createParticles();
+        });
+    </script>
+    <script src="assets/js/chatbot.js"></script>
+</body>
+</html>

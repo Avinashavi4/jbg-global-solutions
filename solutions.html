@@ -5,390 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solutions - JBG Global Solutions</title>
     <meta name="description" content="JBG Global Solutions provides enterprise solutions for digital transformation, intelligent document processing, AI analytics, QA automation, and cloud modernization.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Solutions - JBG Global Solutions">
+    <meta property="og:description" content="Enterprise solutions for digital transformation, AI analytics, QA automation, and cloud modernization.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=1200&h=630&fit=crop&q=80">
+    <meta property="og:url" content="https://jbgglobal.com/solutions">
+    <meta property="og:site_name" content="JBG Global Solutions">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Solutions - JBG Global Solutions">
+    <meta name="twitter:description" content="Digital transformation, AI analytics, automation & cloud modernization solutions.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=1200&h=630&fit=crop&q=80">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/expo-3d.css">
-    <link rel="stylesheet" href="assets/css/globe-3d.css">
-    <link rel="stylesheet" href="assets/css/partners.css">
-    <link rel="stylesheet" href="assets/css/dark-blue-option2.css">
-    <link rel="stylesheet" href="assets/css/jbg-logo.css">
-    <link rel="stylesheet" href="assets/css/chatbot.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/site.css">
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
-</head>
-<body>
+    <link rel="canonical" href="https://jbgglobal.com/solutions">
+</head></a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html" class="nav-cta">Talk to Experts</a></li></ul><button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button></div></nav>
 
-    <!-- 3D Animated Background System -->
-    <div class="bg-system">
-        <div class="starfield" id="starfield"></div>
-        <div class="nebula nebula-1"></div>
-        <div class="nebula nebula-2"></div>
-        <div class="nebula nebula-3"></div>
-        <div class="grid-floor"></div>
-        <div class="particles" id="particles"></div>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo jbg-logo-container">
-                <div class="logo-icon jbg-logo">
-                    <object type="image/svg+xml" data="assets/images/jbg-logo.svg" class="jbg-animated-svg">JBG</object>
-                </div>
-                <div class="logo-text">
-                    <span class="brand">JBG Global</span>
-                    <span class="tagline">Solutions Pvt Ltd</span>
-                </div>
-            </a>
-            
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="solutions.html" class="active">Solutions</a></li>
-                <li><a href="careers.html">Careers</a></li>
-                <li><a href="contact.html" class="nav-cta">Talk to Experts</a></li>
-            </ul>
-            
-            <button class="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Page Hero -->
     <section class="page-hero">
         <div class="container">
-            <div class="page-hero-content">
-                <span class="hero-badge">
-                    <i class="fas fa-puzzle-piece"></i>
-                    <span>Our Solutions</span>
-                </span>
-                <h1 class="page-title">
-                    Enterprise <span class="gradient-text">Solutions</span>
-                </h1>
-                <p class="page-subtitle">
-                    Our solutions are designed to boost enterprise and business transformation through automation, analytics, and intelligent platforms
-                </p>
-            </div>
-            
-            <!-- 3D Connected Network -->
-            <div class="hero-3d-element">
-                <div class="network-nodes">
-                    <div class="network-node nn-1"><i class="fas fa-server"></i></div>
-                    <div class="network-node nn-2"><i class="fas fa-database"></i></div>
-                    <div class="network-node nn-3"><i class="fas fa-cloud"></i></div>
-                    <div class="network-node nn-4"><i class="fas fa-laptop"></i></div>
-                    <div class="network-node nn-5"><i class="fas fa-mobile-alt"></i></div>
-                    <svg class="network-lines" viewBox="0 0 200 200">
-                        <line x1="100" y1="30" x2="30" y2="80" stroke="url(#netGrad)" stroke-width="2"/>
-                        <line x1="100" y1="30" x2="170" y2="80" stroke="url(#netGrad)" stroke-width="2"/>
-                        <line x1="30" y1="80" x2="60" y2="160" stroke="url(#netGrad)" stroke-width="2"/>
-                        <line x1="170" y1="80" x2="140" y2="160" stroke="url(#netGrad)" stroke-width="2"/>
-                        <line x1="60" y1="160" x2="140" y2="160" stroke="url(#netGrad)" stroke-width="2"/>
-                        <defs>
-                            <linearGradient id="netGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" style="stop-color:#a855f7;stop-opacity:0.5"/>
-                                <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:1"/>
-                                <stop offset="100%" style="stop-color:#a855f7;stop-opacity:0.5"/>
-                            </linearGradient>
-                        </defs>
-                    </svg>
+            <div class="hero-badge"><i class="fas fa-puzzle-piece"></i> <span>Our Solutions</span></div>
+            <h1>Enterprise <span class="gradient-text">Solutions</span></h1>
+            <p>Our solutions are designed to boost enterprise transformation through automation, analytics, and intelligent platforms</p>
+        </div>
+    </section>
+
+    <!-- Solutions Image Banner -->
+    <section class="section" style="padding-top:60px;padding-bottom:40px;">
+        <div class="container">
+            <div class="about-grid reveal" style="grid-template-columns: 1fr 1fr;">
+                <div style="display:flex;flex-direction:column;justify-content:center;">
+                    <h2 class="section-title">Intelligent Solutions for <span class="gradient-text">Modern Enterprises</span></h2>
+                    <p class="lead-text">We build scalable, secure, and intelligent platforms that transform how businesses operate, make decisions, and serve customers.</p>
+                </div>
+                <div>
+                    <div class="img-tilt">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&q=80" alt="Enterprise Solutions Dashboard" style="width:100%;height:350px;object-fit:cover;">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Solutions Benefits -->
-    <section class="section solutions-benefits">
+    <!-- Benefits -->
+    <section class="section section-light" style="padding:60px 0;">
         <div class="container">
-            <div class="benefits-grid">
-                <div class="benefit-item">
-                    <div class="benefit-icon"><i class="fas fa-dollar-sign"></i></div>
-                    <h4>Reduce Costs</h4>
-                    <p>Optimize operations and reduce overhead</p>
-                </div>
-                <div class="benefit-item">
-                    <div class="benefit-icon"><i class="fas fa-tachometer-alt"></i></div>
-                    <h4>Improve Efficiency</h4>
-                    <p>Streamline processes and workflows</p>
-                </div>
-                <div class="benefit-item">
-                    <div class="benefit-icon"><i class="fas fa-bolt"></i></div>
-                    <h4>Accelerate Decisions</h4>
-                    <p>Data-driven insights for faster action</p>
-                </div>
+            <div class="benefits-grid stagger-children">
+                <div class="benefit-item"><div class="benefit-icon"><i class="fas fa-dollar-sign"></i></div><h4>Reduce Costs</h4><p>Optimize operations and reduce overhead</p></div>
+                <div class="benefit-item"><div class="benefit-icon"><i class="fas fa-tachometer-alt"></i></div><h4>Improve Efficiency</h4><p>Streamline processes and workflows</p></div>
+                <div class="benefit-item"><div class="benefit-icon"><i class="fas fa-bolt"></i></div><h4>Accelerate Decisions</h4><p>Data-driven insights for faster action</p></div>
             </div>
         </div>
     </section>
 
     <!-- Key Solutions -->
-    <section class="section key-solutions">
+    <section class="section">
         <div class="container">
-            <div class="section-header">
-                <span class="section-badge">
-                    <i class="fas fa-star"></i>
-                    Key Solutions
-                </span>
-                <h2 class="section-title">
-                    Solution <span class="gradient-text">Areas</span>
-                </h2>
+            <div class="section-header reveal">
+                <div class="section-badge"><i class="fas fa-star"></i> Key Solutions</div>
+                <h2 class="section-title">Solution <span class="gradient-text">Areas</span></h2>
             </div>
-            
-            <div class="solutions-grid">
-                <div class="solution-card">
-                    <div class="solution-icon"><i class="fas fa-digital-tachograph"></i></div>
-                    <h3>Digital Transformation Platforms</h3>
-                    <p>Comprehensive platforms to modernize your business operations, customer experiences, and digital capabilities across the enterprise.</p>
-                    <ul class="solution-points">
-                        <li>End-to-end digital modernization</li>
-                        <li>Customer experience platforms</li>
-                        <li>Digital workplace solutions</li>
-                        <li>Integration & API management</li>
-                    </ul>
-                </div>
-                
-                <div class="solution-card featured">
-                    <div class="featured-tag">Top Solution</div>
-                    <div class="solution-icon"><i class="fas fa-file-invoice"></i></div>
-                    <h3>Intelligent Document Processing (IDP)</h3>
-                    <p>AI-powered document processing that extracts, classifies, and validates data from any document type with high accuracy.</p>
-                    <ul class="solution-points">
-                        <li>OCR & data extraction</li>
-                        <li>Document classification</li>
-                        <li>Validation & verification</li>
-                        <li>Workflow integration</li>
-                    </ul>
-                </div>
-                
-                <div class="solution-card">
-                    <div class="solution-icon"><i class="fas fa-chart-pie"></i></div>
-                    <h3>AI-Driven Analytics & Insights</h3>
-                    <p>Transform raw data into actionable insights with advanced analytics, machine learning, and predictive modeling capabilities.</p>
-                    <ul class="solution-points">
-                        <li>Business intelligence dashboards</li>
-                        <li>Predictive analytics</li>
-                        <li>Real-time data processing</li>
-                        <li>Custom ML models</li>
-                    </ul>
-                </div>
-                
-                <div class="solution-card">
-                    <div class="solution-icon"><i class="fas fa-vial"></i></div>
-                    <h3>QA Automation & Continuous Testing</h3>
-                    <p>Accelerate software delivery with automated testing frameworks that ensure quality at every stage of development.</p>
-                    <ul class="solution-points">
-                        <li>Test automation frameworks</li>
-                        <li>CI/CD pipeline integration</li>
-                        <li>Performance & load testing</li>
-                        <li>Security testing</li>
-                    </ul>
-                </div>
-                
-                <div class="solution-card">
-                    <div class="solution-icon"><i class="fas fa-cogs"></i></div>
-                    <h3>Business Process Automation</h3>
-                    <p>Automate complex business processes with intelligent workflows that reduce manual effort and improve accuracy.</p>
-                    <ul class="solution-points">
-                        <li>Workflow automation</li>
-                        <li>RPA implementation</li>
-                        <li>Process optimization</li>
-                        <li>Intelligent routing</li>
-                    </ul>
-                </div>
-                
-                <div class="solution-card">
-                    <div class="solution-icon"><i class="fas fa-cloud-upload-alt"></i></div>
-                    <h3>Cloud & Infrastructure Modernization</h3>
-                    <p>Transform your IT infrastructure with cloud-native solutions that scale with your business needs.</p>
-                    <ul class="solution-points">
-                        <li>Cloud migration & strategy</li>
-                        <li>Hybrid cloud solutions</li>
-                        <li>Infrastructure as Code</li>
-                        <li>DevOps enablement</li>
-                    </ul>
-                </div>
+            <div class="solutions-grid stagger-children">
+                <div class="solution-card"><div class="solution-icon"><i class="fas fa-digital-tachograph"></i></div><h3>Digital Transformation Platforms</h3><p>Comprehensive platforms to modernize operations, customer experiences, and digital capabilities.</p><ul class="solution-points"><li>End-to-end digital modernization</li><li>Customer experience platforms</li><li>Digital workplace solutions</li><li>Integration & API management</li></ul></div>
+                <div class="solution-card featured"><div class="featured-tag">Top Solution</div><div class="solution-icon"><i class="fas fa-file-invoice"></i></div><h3>Intelligent Document Processing</h3><p>AI-powered document processing that extracts, classifies, and validates data with high accuracy.</p><ul class="solution-points"><li>OCR & data extraction</li><li>Document classification</li><li>Validation & verification</li><li>Workflow integration</li></ul></div>
+                <div class="solution-card"><div class="solution-icon"><i class="fas fa-chart-pie"></i></div><h3>AI-Driven Analytics & Insights</h3><p>Transform raw data into actionable insights with advanced analytics and predictive modeling.</p><ul class="solution-points"><li>Business intelligence dashboards</li><li>Predictive analytics</li><li>Real-time data processing</li><li>Custom ML models</li></ul></div>
+                <div class="solution-card"><div class="solution-icon"><i class="fas fa-vial"></i></div><h3>QA Automation & Testing</h3><p>Accelerate software delivery with automated testing frameworks for quality at every stage.</p><ul class="solution-points"><li>Test automation frameworks</li><li>CI/CD pipeline integration</li><li>Performance & load testing</li><li>Security testing</li></ul></div>
+                <div class="solution-card"><div class="solution-icon"><i class="fas fa-cogs"></i></div><h3>Business Process Automation</h3><p>Automate complex business processes with intelligent workflows for accuracy and efficiency.</p><ul class="solution-points"><li>Workflow automation</li><li>RPA implementation</li><li>Process optimization</li><li>Intelligent routing</li></ul></div>
+                <div class="solution-card"><div class="solution-icon"><i class="fas fa-cloud-upload-alt"></i></div><h3>Cloud & Infrastructure Modernization</h3><p>Transform IT infrastructure with cloud-native solutions that scale with your business.</p><ul class="solution-points"><li>Cloud migration & strategy</li><li>Hybrid cloud solutions</li><li>Infrastructure as Code</li><li>DevOps enablement</li></ul></div>
             </div>
         </div>
     </section>
 
-    <!-- Who We Serve -->
-    <section class="section serve-section">
+    <!-- Industries -->
+    <section class="section section-light">
         <div class="container">
-            <div class="section-header">
-                <span class="section-badge">
-                    <i class="fas fa-users"></i>
-                    Who We Serve
-                </span>
-                <h2 class="section-title">
-                    Industries We <span class="gradient-text">Serve</span>
-                </h2>
+            <div class="section-header reveal">
+                <div class="section-badge"><i class="fas fa-users"></i> Who We Serve</div>
+                <h2 class="section-title">Industries We <span class="gradient-text">Serve</span></h2>
             </div>
-            
-            <div class="serve-grid">
-                <div class="serve-item">
-                    <div class="serve-icon"><i class="fas fa-city"></i></div>
-                    <h4>Enterprises & Large Organizations</h4>
-                </div>
-                <div class="serve-item">
-                    <div class="serve-icon"><i class="fas fa-building"></i></div>
-                    <h4>Mid-Market Companies</h4>
-                </div>
-                <div class="serve-item">
-                    <div class="serve-icon"><i class="fas fa-rocket"></i></div>
-                    <h4>Startups & Scale-ups</h4>
-                </div>
-                <div class="serve-item">
-                    <div class="serve-icon"><i class="fas fa-landmark"></i></div>
-                    <h4>Government & Public Sector</h4>
-                </div>
-                <div class="serve-item">
-                    <div class="serve-icon"><i class="fas fa-home"></i></div>
-                    <h4>Real Estate & Infrastructure Firms</h4>
-                </div>
+            <div class="serve-grid stagger-children">
+                <div class="serve-item"><div class="serve-icon"><i class="fas fa-city"></i></div><h4>Enterprises</h4></div>
+                <div class="serve-item"><div class="serve-icon"><i class="fas fa-building"></i></div><h4>Mid-Market</h4></div>
+                <div class="serve-item"><div class="serve-icon"><i class="fas fa-rocket"></i></div><h4>Startups</h4></div>
+                <div class="serve-item"><div class="serve-icon"><i class="fas fa-landmark"></i></div><h4>Government</h4></div>
+                <div class="serve-item"><div class="serve-icon"><i class="fas fa-home"></i></div><h4>Real Estate</h4></div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="section cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <div class="cta-text">
-                    <h2>Ready to Transform Your Enterprise?</h2>
-                    <p>Let's discuss how our solutions can address your specific business challenges</p>
-                </div>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary btn-large">
-                        <i class="fas fa-phone"></i>
-                        <span>Talk to Our Experts</span>
-                    </a>
-                    <a href="services.html" class="btn btn-outline btn-large">
-                        <span>Explore Services</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section class="cta-section"><div class="container"><div class="cta-content"><div class="cta-text"><h2>Ready to Transform Your Enterprise?</h2><p>Let's discuss how our solutions can address your business challenges</p></div><div class="cta-buttons"><a href="contact.html" class="btn btn-white btn-large"><i class="fas fa-phone"></i> <span>Talk to Our Experts</span></a><a href="services.html" class="btn btn-outline btn-large" style="border-color:white;color:white;"><span>Explore Services</span> <i class="fas fa-arrow-right"></i></a></div></div></div></section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <div class="footer-logo">
-                        <object type="image/svg+xml" data="assets/images/jbg-logo.svg" class="footer-jbg-logo" style="width: 50px; height: 50px;">JBG</object>
-                        <span>JBG Global Solutions</span>
-                    </div>
-                    <p class="footer-description">
-                        Global transformation partner delivering innovative solutions across IT, AI, Digital Marketing, and Infrastructure Development.
-                    </p>
-                    <div class="social-links">
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="solutions.html">Solutions</a></li>
-                        <li><a href="careers.html">Careers</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html">Digital Transformation</a></li>
-                        <li><a href="services.html">AI & ML Solutions</a></li>
-                        <li><a href="services.html">Automation & RPA</a></li>
-                        <li><a href="services.html">Digital Marketing</a></li>
-                        <li><a href="services.html">Infrastructure</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#">Blogs & Insights</a></li>
-                        <li><a href="#">Case Studies</a></li>
-                        <li><a href="#">White-papers</a></li>
-                        <li><a href="#">Industry Updates</a></li>
-                        <li><a href="#">Technology Trends</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h4>Contact Us</h4>
-                    <ul class="contact-info">
-                        <li><i class="fas fa-envelope"></i> Admin@jbgglobal.com</li>
-                        <li><i class="fas fa-phone"></i> +91 9063034557</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Kondapur, Hyderabad, Telangana</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 JBG Global Solutions Pvt Ltd. All Rights Reserved.</p>
-                <div class="footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-col"><div class="footer-logo"><div class="logo-icon"><object type="image/svg+xml" data="assets/images/jbg-logo.svg" style="width:36px;height:36px;border-radius:8px;">JBG</object></div><span>JBG Global Solutions</span></div><p class="footer-description">Global transformation partner delivering innovative solutions across IT, AI, Digital Marketing, and Infrastructure Development.</p><div class="social-links"><a href="#"><i class="fab fa-linkedin"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div></div><div class="footer-col"><h4>Quick Links</h4><ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="products.html">Products</a></li><li><a href="solutions.html">Solutions</a></li><li><a href="careers.html">Careers</a></li></ul></div><div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">Digital Transformation</a></li><li><a href="services.html">AI & ML Solutions</a></li><li><a href="services.html">Automation & RPA</a></li><li><a href="services.html">Digital Marketing</a></li><li><a href="services.html">Infrastructure</a></li></ul></div><div class="footer-col"><h4>Resources</h4><ul><li><a href="#">Blogs & Insights</a></li><li><a href="#">Case Studies</a></li><li><a href="#">White-papers</a></li><li><a href="#">Industry Updates</a></li></ul></div><div class="footer-col"><h4>Contact Us</h4><ul class="contact-info"><li><i class="fas fa-envelope"></i> Admin@jbgglobal.com</li><li><i class="fas fa-phone"></i> +91 9063034557</li><li><i class="fas fa-map-marker-alt"></i> Kondapur, Hyderabad, Telangana</li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 JBG Global Solutions Private Limited. All Rights Reserved.</p><div class="footer-links"><a href="privacy-policy.html">Privacy Policy</a><a href="terms-of-service.html">Terms of Service</a></div></div></div></footer>
+    <script src="assets/js/site.js"></script>
 
-    <script src="assets/js/expo-3d.js"></script>
-    <script>
-        function createStarfield() {
-            const starfield = document.getElementById('starfield');
-            if (!starfield) return;
-            for (let i = 0; i < 150; i++) {
-                const star = document.createElement('div');
-                star.className = 'star';
-                star.style.left = Math.random() * 100 + '%';
-                star.style.top = Math.random() * 100 + '%';
-                star.style.setProperty('--duration', (Math.random() * 3 + 2) + 's');
-                star.style.animationDelay = Math.random() * 3 + 's';
-                starfield.appendChild(star);
-            }
-        }
-        
-        function createParticles() {
-            const particles = document.getElementById('particles');
-            if (!particles) return;
-            for (let i = 0; i < 50; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.top = Math.random() * 100 + '%';
-                particle.style.animationDuration = (Math.random() * 20 + 10) + 's';
-                particle.style.animationDelay = Math.random() * 10 + 's';
-                particles.appendChild(particle);
-            }
-        }
-        
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-        }
-        
-        document.addEventListener('DOMContentLoaded', () => {
-            createStarfield();
-            createParticles();
-        });
-    </script>
-    <script src="assets/js/chatbot.js"></script>
+    <!-- Floating Talk to Experts -->
+    <div class="floating-cta">
+        <a href="contact.html" class="floating-cta-btn">
+            <i class="fas fa-headset"></i>
+            <span>Talk to Experts</span>
+        </a>
+    </div>
+
 </body>
 </html>

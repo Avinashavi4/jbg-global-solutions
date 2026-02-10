@@ -3,45 +3,552 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - JBG Global Solutions</title>
-    <meta name="description" content="Learn about JBG Global Solutions - one of the fastest-growing multi-domain service organizations delivering integrated solutions across technology, automation, digital, and infrastructure domains.">
+    <title>About Us - JBG Global Solutions | Global IT Services & Transformation Partner</title>
+    <meta name="description" content="Learn about JBG Global Solutions - one of the fastest-growing multi-domain service organizations delivering integrated solutions across technology, automation, digital marketing, staffing, and infrastructure worldwide.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About Us - JBG Global Solutions">
+    <meta property="og:description" content="One of the fastest-growing multi-domain service organizations delivering integrated solutions across technology, automation, digital marketing, staffing, and infrastructure.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=630&fit=crop&q=80">
+    <meta property="og:url" content="https://jbgglobal.com/about">
+    <meta property="og:site_name" content="JBG Global Solutions">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Us - JBG Global Solutions">
+    <meta name="twitter:description" content="Fastest-growing multi-domain service organization — Technology, AI, Digital Marketing & Infrastructure.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=630&fit=crop&q=80">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/expo-3d.css">
-    <link rel="stylesheet" href="assets/css/globe-3d.css">
-    <link rel="stylesheet" href="assets/css/partners.css">
-    <link rel="stylesheet" href="assets/css/dark-blue-option2.css">
-    <link rel="stylesheet" href="assets/css/jbg-logo.css">
-    <link rel="stylesheet" href="assets/css/chatbot.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/site.css">
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="canonical" href="https://jbgglobal.com/about">
+    <style>
+        /* --- Cinematic About Hero --- */
+        .about-hero {
+            position: relative;
+            min-height: 72vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            background: #0a0e1a;
+        }
+        .about-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=800&fit=crop&q=80') center/cover no-repeat;
+            opacity: 0.28;
+            filter: brightness(0.7) saturate(1.1);
+        }
+        .about-hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(10,14,26,0.82) 0%, rgba(10,14,26,0.60) 50%, rgba(10,14,26,0.92) 100%);
+        }
+        .about-hero .hero-inner {
+            position: relative;
+            z-index: 2;
+            max-width: 860px;
+            padding: 100px 24px 80px;
+        }
+        .about-hero .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(59,130,246,0.15);
+            border: 1px solid rgba(59,130,246,0.3);
+            color: #60a5fa;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            padding: 8px 22px;
+            border-radius: 50px;
+            margin-bottom: 28px;
+        }
+        .about-hero h1 {
+            font-size: clamp(2.2rem, 5vw, 3.8rem);
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.15;
+            margin-bottom: 22px;
+            letter-spacing: -0.5px;
+        }
+        .about-hero h1 span {
+            background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .about-hero .hero-subtitle {
+            font-size: 1.18rem;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.7;
+            max-width: 680px;
+            margin: 0 auto;
+            font-weight: 400;
+        }
+
+        /* --- Impact Numbers / Dark Stats --- */
+        .impact-numbers {
+            background: linear-gradient(135deg, #0a0e1a 0%, #1a1040 50%, #0a0e1a 100%);
+            padding: 72px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .impact-numbers::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(59,130,246,0.08) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 50%, rgba(168,85,247,0.08) 0%, transparent 50%);
+        }
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            position: relative;
+            z-index: 1;
+        }
+        .impact-item {
+            text-align: center;
+            padding: 28px 12px;
+            position: relative;
+        }
+        .impact-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 20%;
+            height: 60%;
+            width: 1px;
+            background: linear-gradient(180deg, transparent, rgba(255,255,255,0.12), transparent);
+        }
+        .impact-number {
+            font-size: clamp(2.4rem, 4vw, 3.4rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+            margin-bottom: 8px;
+        }
+        .impact-label {
+            color: rgba(255,255,255,0.65);
+            font-size: 0.92rem;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
+
+        /* --- Core Values Grid --- */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+        .value-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 36px 28px;
+            position: relative;
+            border: 1px solid #e5e7eb;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .value-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+        }
+        .value-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+        }
+        .value-icon.blue { background: rgba(59,130,246,0.12); color: #3b82f6; }
+        .value-icon.cyan { background: rgba(6,182,212,0.12); color: #06b6d4; }
+        .value-icon.orange { background: rgba(249,115,22,0.12); color: #f97316; }
+        .value-icon.purple { background: rgba(168,85,247,0.12); color: #a855f7; }
+        .value-icon.green { background: rgba(34,197,94,0.12); color: #22c55e; }
+        .value-icon.pink { background: rgba(236,72,153,0.12); color: #ec4899; }
+        .value-card h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 10px;
+        }
+        .value-card p {
+            color: #6b7280;
+            font-size: 0.95rem;
+            line-height: 1.65;
+        }
+
+        /* --- Timeline --- */
+        .timeline-section {
+            background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+        }
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%);
+            transform: translateX(-50%);
+            border-radius: 3px;
+        }
+        .timeline-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 48px;
+            position: relative;
+        }
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+        .timeline-item:nth-child(odd) {
+            flex-direction: row;
+        }
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .timeline-content {
+            width: 44%;
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 24px 28px;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .timeline-content:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+        }
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-right: auto;
+        }
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-left: auto;
+        }
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            top: 28px;
+            width: 18px;
+            height: 18px;
+            background: #3b82f6;
+            border: 4px solid #ffffff;
+            border-radius: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            box-shadow: 0 0 0 4px rgba(59,130,246,0.2);
+        }
+        .timeline-year {
+            display: inline-block;
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #3b82f6;
+            background: rgba(59,130,246,0.08);
+            padding: 4px 14px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        .timeline-content h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 6px;
+        }
+        .timeline-content p {
+            color: #6b7280;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* --- Leadership Grid --- */
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+        }
+        .leader-card {
+            background: #ffffff;
+            border-radius: 18px;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+        .leader-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 24px 60px rgba(0,0,0,0.1);
+        }
+        .leader-photo {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            filter: grayscale(15%) contrast(1.05);
+            transition: filter 0.4s ease;
+        }
+        .leader-card:hover .leader-photo {
+            filter: grayscale(0%) contrast(1.08);
+        }
+        .leader-info {
+            padding: 24px 20px 28px;
+        }
+        .leader-info h3 {
+            font-size: 1.12rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 4px;
+        }
+        .leader-title {
+            font-size: 0.88rem;
+            color: #3b82f6;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .leader-bio {
+            font-size: 0.85rem;
+            color: #6b7280;
+            line-height: 1.55;
+            margin-bottom: 14px;
+        }
+        .leader-social a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            background: rgba(59,130,246,0.08);
+            color: #3b82f6;
+            font-size: 0.95rem;
+            transition: background 0.3s, color 0.3s;
+        }
+        .leader-social a:hover {
+            background: #3b82f6;
+            color: #fff;
+        }
+
+        /* --- Global Presence --- */
+        .global-section {
+            background: linear-gradient(135deg, #f0f4ff 0%, #f8fafc 50%, #faf5ff 100%);
+        }
+        .global-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+        .global-image {
+            position: relative;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+        .global-image img {
+            width: 100%;
+            border-radius: 18px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+        .global-locations {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        .location-card {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: #ffffff;
+            padding: 20px 24px;
+            border-radius: 14px;
+            border: 1px solid #e5e7eb;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .location-card:hover {
+            transform: translateX(6px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+        }
+        .location-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        .location-icon.india { background: rgba(249,115,22,0.12); color: #f97316; }
+        .location-icon.usa { background: rgba(59,130,246,0.12); color: #3b82f6; }
+        .location-icon.uk { background: rgba(168,85,247,0.12); color: #a855f7; }
+        .location-icon.me { background: rgba(34,197,94,0.12); color: #22c55e; }
+        .location-icon.sg { background: rgba(236,72,153,0.12); color: #ec4899; }
+        .location-details h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 2px;
+        }
+        .location-details p {
+            font-size: 0.88rem;
+            color: #6b7280;
+        }
+        .location-badge {
+            margin-left: auto;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 20px;
+            white-space: nowrap;
+        }
+        .location-badge.hq { background: rgba(249,115,22,0.1); color: #f97316; }
+        .location-badge.office { background: rgba(59,130,246,0.1); color: #3b82f6; }
+
+        /* --- Awards Strip --- */
+        .awards-strip {
+            background: #ffffff;
+            border-top: 1px solid #f1f5f9;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .awards-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .award-badge {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(59,130,246,0.04);
+            border: 1px solid rgba(59,130,246,0.12);
+            padding: 14px 22px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #1e293b;
+            transition: transform 0.3s, background 0.3s;
+            white-space: nowrap;
+        }
+        .award-badge:hover {
+            transform: translateY(-3px);
+            background: rgba(59,130,246,0.08);
+        }
+        .award-badge i {
+            font-size: 1.2rem;
+            color: #3b82f6;
+        }
+
+        /* --- CSR / Social Good --- */
+        .csr-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 28px;
+        }
+        .csr-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 32px 24px;
+            border: 1px solid #e5e7eb;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .csr-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 50px rgba(0,0,0,0.08);
+        }
+        .csr-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 16px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            margin-bottom: 18px;
+        }
+        .csr-icon.green { background: rgba(34,197,94,0.12); color: #22c55e; }
+        .csr-icon.blue { background: rgba(59,130,246,0.12); color: #3b82f6; }
+        .csr-icon.purple { background: rgba(168,85,247,0.12); color: #a855f7; }
+        .csr-icon.orange { background: rgba(249,115,22,0.12); color: #f97316; }
+        .csr-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 10px;
+        }
+        .csr-card p {
+            color: #6b7280;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 1024px) {
+            .leadership-grid { grid-template-columns: repeat(2, 1fr); }
+            .values-grid { grid-template-columns: repeat(2, 1fr); }
+            .csr-grid { grid-template-columns: repeat(2, 1fr); }
+            .impact-grid { grid-template-columns: repeat(3, 1fr); }
+            .impact-item:nth-child(3)::after { display: none; }
+            .global-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 768px) {
+            .about-hero { min-height: 60vh; }
+            .about-hero h1 { font-size: 2rem; }
+            .impact-grid { grid-template-columns: repeat(2, 1fr); }
+            .impact-item::after { display: none; }
+            .values-grid { grid-template-columns: 1fr; }
+            .timeline::before { left: 24px; }
+            .timeline-item,
+            .timeline-item:nth-child(even) { flex-direction: column; padding-left: 56px; }
+            .timeline-content { width: 100% !important; margin: 0 !important; }
+            .timeline-dot { left: 24px; top: 6px; }
+            .leadership-grid { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
+            .csr-grid { grid-template-columns: 1fr; }
+            .awards-row { justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 8px; }
+        }
+        @media (max-width: 480px) {
+            .impact-grid { grid-template-columns: 1fr 1fr; }
+            .about-hero .hero-inner { padding: 80px 16px 60px; }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- 3D Animated Background System -->
-    <div class="bg-system">
-        <div class="starfield" id="starfield"></div>
-        <div class="nebula nebula-1"></div>
-        <div class="nebula nebula-2"></div>
-        <div class="nebula nebula-3"></div>
-        <div class="grid-floor"></div>
-        <div class="particles" id="particles"></div>
-    </div>
-
-    <!-- Navigation -->
+    <!-- ==================== NAVIGATION ==================== -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo jbg-logo-container">
-                <div class="logo-icon jbg-logo">
-                    <object type="image/svg+xml" data="assets/images/jbg-logo.svg" class="jbg-animated-svg">JBG</object>
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <object type="image/svg+xml" data="assets/images/jbg-logo.svg" style="width:42px;height:42px;border-radius:10px;">JBG</object>
                 </div>
                 <div class="logo-text">
                     <span class="brand">JBG Global</span>
                     <span class="tagline">Solutions Pvt Ltd</span>
                 </div>
             </a>
-            
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="active">About</a></li>
@@ -51,190 +558,501 @@
                 <li><a href="careers.html">Careers</a></li>
                 <li><a href="contact.html" class="nav-cta">Talk to Experts</a></li>
             </ul>
-            
             <button class="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
 
-    <!-- Page Hero -->
-    <section class="page-hero">
-        <div class="container">
-            <div class="page-hero-content">
-                <span class="hero-badge">
-                    <i class="fas fa-building"></i>
-                    <span>About Us</span>
-                </span>
-                <h1 class="page-title">
-                    About <span class="gradient-text">JBG Global Solutions</span>
-                </h1>
-                <p class="page-subtitle">
-                    One of the fastest-growing multi-domain service organizations, delivering integrated solutions across technology, automation, digital, and infrastructure domains.
-                </p>
+
+    <!-- ==================== CINEMATIC HERO ==================== -->
+    <section class="about-hero">
+        <div class="hero-inner">
+            <div class="hero-badge">
+                <i class="fas fa-building"></i> About JBG Global
             </div>
-            
-            <!-- 3D Rotating Tech Cube -->
-            <div class="hero-3d-element">
-                <div class="rotating-cube">
-                    <div class="cube-face cube-front"><i class="fas fa-brain"></i></div>
-                    <div class="cube-face cube-back"><i class="fas fa-cloud"></i></div>
-                    <div class="cube-face cube-right"><i class="fas fa-robot"></i></div>
-                    <div class="cube-face cube-left"><i class="fas fa-shield-alt"></i></div>
-                    <div class="cube-face cube-top"><i class="fas fa-database"></i></div>
-                    <div class="cube-face cube-bottom"><i class="fas fa-code"></i></div>
-                </div>
-            </div>
+            <h1>Transforming Businesses,<br><span>Empowering People</span></h1>
+            <p class="hero-subtitle">
+                We are a global transformation partner committed to delivering intelligent, end-to-end solutions
+                that accelerate growth, drive innovation, and build resilient enterprises across industries and continents.
+            </p>
         </div>
     </section>
 
-    <!-- About Main Section -->
-    <section class="section about-main">
+
+    <!-- ==================== WHO WE ARE ==================== -->
+    <section class="section section-light">
         <div class="container">
-            <div class="about-intro-grid">
-                <div class="about-intro-content">
-                    <h2 class="section-title">
-                        Our <span class="gradient-text">Story</span>
-                    </h2>
-                    <p class="intro-text">
-                        JBG Global Solutions was founded with a simple yet powerful belief: <em>Technology should simplify business, not complicate it.</em>
-                    </p>
-                    <p class="description">
-                        By combining innovation, execution excellence, and global delivery, we partner with startups, mid-market firms, and large enterprises to solve complex business challenges and unlock sustainable growth.
-                    </p>
-                    <p class="description">
-                        Our teams operate across onshore and offshore locations, ensuring agility, cost efficiency, faster delivery, and round-the-clock productivity.
-                    </p>
-                </div>
-                <div class="about-intro-image">
-                    <div class="image-frame">
-                        <img src="assets/images/hero-1.jpg" alt="JBG Global Solutions">
-                        <div class="image-overlay"></div>
+            <div class="about-grid reveal">
+                <div class="about-image reveal-left">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop&q=80" alt="JBG Global Solutions Team Collaboration" class="image-main img-reveal">
+                    <div class="experience-badge">
+                        <span class="badge-number">15+</span>
+                        <span class="badge-text">Years of<br>Excellence</span>
                     </div>
                 </div>
+                <div class="about-content reveal-right">
+                    <div class="section-badge">Who We Are</div>
+                    <h2 class="section-title">A Legacy of Innovation,<br>A Future <span class="gradient-text">Without Limits</span></h2>
+                    <p class="lead-text">
+                        JBG Global Solutions is one of the fastest-growing multi-domain service organizations, delivering integrated
+                        solutions across technology, automation, digital marketing, staffing, and infrastructure to clients worldwide.
+                    </p>
+                    <p class="description-text">
+                        Founded with the belief that technology should simplify business — not complicate it — JBG Global Solutions
+                        began its journey in Hyderabad, India, with a clear mission: to make enterprise-grade IT capabilities
+                        accessible to organizations of every size. What started as a focused IT consulting practice has evolved
+                        into a comprehensive global delivery powerhouse.
+                    </p>
+                    <p class="description-text">
+                        Today, with a robust global delivery model spanning onshore and offshore locations, over 500 skilled professionals,
+                        and a proven track record of 200+ successful engagements, we serve as a strategic partner to Fortune 500 companies,
+                        high-growth startups, and government organizations across 12+ countries. Our strength lies in combining deep
+                        domain expertise with cutting-edge technology to deliver measurable business outcomes.
+                    </p>
+                    <p class="description-text">
+                        From AI-powered automation and cloud-native platforms to full-stack digital transformation and
+                        infrastructure modernization, JBG Global Solutions is your single-window partner for accelerating
+                        innovation and achieving operational excellence at scale.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Vision & Mission Section -->
-    <section class="section vision-mission">
+
+    <!-- ==================== IMPACT NUMBERS ==================== -->
+    <section class="impact-numbers">
+        <div class="impact-grid stagger-children">
+            <div class="impact-item reveal">
+                <div class="impact-number">15+</div>
+                <div class="impact-label">Years of Excellence</div>
+            </div>
+            <div class="impact-item reveal">
+                <div class="impact-number">200+</div>
+                <div class="impact-label">Projects Delivered</div>
+            </div>
+            <div class="impact-item reveal">
+                <div class="impact-number">50+</div>
+                <div class="impact-label">Global Clients</div>
+            </div>
+            <div class="impact-item reveal">
+                <div class="impact-number">12+</div>
+                <div class="impact-label">Countries Served</div>
+            </div>
+            <div class="impact-item reveal">
+                <div class="impact-number">500+</div>
+                <div class="impact-label">Professionals</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== VISION & MISSION ==================== -->
+    <section class="section section-light">
         <div class="container">
-            <div class="vm-grid">
-                <!-- Vision Card -->
+            <div class="section-header reveal">
+                <div class="section-badge">Purpose & Direction</div>
+                <h2 class="section-title">Our Vision & <span class="gradient-text">Mission</span></h2>
+                <p class="section-subtitle">Guided by purpose, driven by impact — shaping a smarter, more connected world.</p>
+            </div>
+            <div class="vm-grid reveal stagger-children">
                 <div class="vm-card vision-card">
                     <div class="vm-icon">
                         <i class="fas fa-eye"></i>
                     </div>
                     <h3>Our Vision</h3>
                     <p>
-                        To become a globally trusted transformation partner, delivering intelligent, scalable, and sustainable solutions that shape the future of businesses and communities.
+                        To become a globally trusted transformation partner, delivering intelligent, scalable, and sustainable
+                        solutions that shape the future of businesses and communities. We envision a world where technology
+                        removes barriers, unlocks human potential, and creates inclusive prosperity across every industry and geography.
                     </p>
                 </div>
-                
-                <!-- Mission Card -->
                 <div class="vm-card mission-card">
                     <div class="vm-icon">
-                        <i class="fas fa-rocket"></i>
+                        <i class="fas fa-bullseye"></i>
                     </div>
                     <h3>Our Mission</h3>
                     <ul class="mission-list">
-                        <li><i class="fas fa-check-circle"></i> Deliver next-generation digital, AI, and automation solutions</li>
-                        <li><i class="fas fa-check-circle"></i> Enable enterprises to achieve speed, efficiency, and scalability</li>
-                        <li><i class="fas fa-check-circle"></i> Build secure, cloud-ready, and future-proof platforms</li>
-                        <li><i class="fas fa-check-circle"></i> Create long-term value for customers, partners, and society</li>
+                        <li><strong>Deliver Next-Generation Solutions</strong> — Harness AI, cloud, automation, and digital
+                            marketing to solve the most complex business challenges with precision and agility.</li>
+                        <li><strong>Enable Speed & Efficiency</strong> — Accelerate time-to-market through lean delivery
+                            models, DevOps practices, and intelligent process automation for every client.</li>
+                        <li><strong>Build Secure, Resilient Platforms</strong> — Design and deploy infrastructure and applications
+                            that are secure by default, compliant by design, and built to scale without limits.</li>
+                        <li><strong>Create Long-Term Value</strong> — Foster deep, enduring partnerships that go beyond
+                            projects to become strategic alliances driving continuous innovation and sustained growth.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- What We Do Section -->
-    <section class="section what-we-do">
+
+    <!-- ==================== CORE VALUES ==================== -->
+    <section class="section" style="background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);">
         <div class="container">
-            <div class="section-header">
-                <span class="section-badge">
-                    <i class="fas fa-cog"></i>
-                    What We Do
-                </span>
-                <h2 class="section-title">
-                    Comprehensive <span class="gradient-text">Capabilities</span>
-                </h2>
+            <div class="section-header reveal">
+                <div class="section-badge">What Defines Us</div>
+                <h2 class="section-title">Our Core <span class="gradient-text">Values</span></h2>
+                <p class="section-subtitle">The principles that guide every decision, every engagement, and every innovation at JBG Global.</p>
             </div>
-            
-            <div class="capabilities-grid">
-                <div class="capability-item">
-                    <div class="cap-icon"><i class="fas fa-laptop-code"></i></div>
-                    <h4>Digital & Enterprise Transformation</h4>
+            <div class="values-grid stagger-children">
+                <div class="value-card reveal">
+                    <div class="value-icon blue"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Innovation First</h3>
+                    <p>We push boundaries with cutting-edge solutions — continuously exploring emerging technologies like AI, blockchain, quantum computing, and IoT to give our clients an unassailable competitive advantage.</p>
                 </div>
-                <div class="capability-item">
+                <div class="value-card reveal">
+                    <div class="value-icon cyan"><i class="fas fa-heart"></i></div>
+                    <h3>Client Obsession</h3>
+                    <p>Clients are at the center of everything we do. We listen deeply, think strategically, and deliver relentlessly — measuring our success only by the measurable outcomes we create for our partners.</p>
+                </div>
+                <div class="value-card reveal">
+                    <div class="value-icon orange"><i class="fas fa-award"></i></div>
+                    <h3>Excellence Always</h3>
+                    <p>We maintain the highest standards of quality in code, design, delivery, and communication. From architecture to deployment, every deliverable reflects our unwavering commitment to engineering excellence.</p>
+                </div>
+                <div class="value-card reveal">
+                    <div class="value-icon purple"><i class="fas fa-users"></i></div>
+                    <h3>People Power</h3>
+                    <p>Our greatest asset is our people. We invest deeply in talent development, foster diversity and inclusion, and create an environment where every team member can thrive, innovate, and lead.</p>
+                </div>
+                <div class="value-card reveal">
+                    <div class="value-icon green"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Integrity & Trust</h3>
+                    <p>We operate with unwavering ethical standards, complete transparency, and honest communication. Trust is the bedrock of every relationship we build — with clients, partners, and communities.</p>
+                </div>
+                <div class="value-card reveal">
+                    <div class="value-icon pink"><i class="fas fa-globe"></i></div>
+                    <h3>Global Mindset</h3>
+                    <p>We think globally and act locally — understanding diverse markets, cultures, and regulatory landscapes to deliver solutions that resonate universally while meeting regional requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== COMPANY JOURNEY TIMELINE ==================== -->
+    <section class="section timeline-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge">Our Story</div>
+                <h2 class="section-title">The JBG Global <span class="gradient-text">Journey</span></h2>
+                <p class="section-subtitle">From a focused IT consulting practice to a global multi-domain powerhouse — a timeline of relentless growth.</p>
+            </div>
+            <div class="timeline">
+                <!-- 2010 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <span class="timeline-year">2010</span>
+                        <h3>The Beginning</h3>
+                        <p>Founded in Hyderabad with a clear focus on IT consulting and custom software development, serving local enterprises with world-class engineering talent.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <!-- 2013 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <span class="timeline-year">2013</span>
+                        <h3>Expansion into Digital & BPO</h3>
+                        <p>Broadened service portfolio to include Digital Marketing, Business Process Outsourcing, and IT staffing — tripling revenue and client base within 18 months.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <!-- 2016 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <span class="timeline-year">2016</span>
+                        <h3>AI/ML & RPA Center of Excellence</h3>
+                        <p>Launched dedicated AI/ML practice and RPA Center of Excellence, becoming early adopters of intelligent automation for enterprise workflows.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <!-- 2019 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <span class="timeline-year">2019</span>
+                        <h3>Global Delivery Centers</h3>
+                        <p>Opened global delivery centers across multiple geographies, expanded team to 100+ employees, and secured partnerships with Fortune 500 clients.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <!-- 2022 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <span class="timeline-year">2022</span>
+                        <h3>Infrastructure & Premium Consulting</h3>
+                        <p>Launched Infrastructure Development division and Premium Consulting practice, enabling end-to-end enterprise transformation for large-scale clients.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <!-- 2025 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <span class="timeline-year">2025</span>
+                        <h3>Scaling New Heights</h3>
+                        <p>Achieved landmark milestones: 500+ professionals, 50+ global clients, presence across 12+ countries, and recognition as a top emerging IT services firm.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <!-- 2026 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <span class="timeline-year">2026</span>
+                        <h3>The Future Is Now</h3>
+                        <p>Expanding with Quantum AI Lab, Innovation Hubs, and next-generation product lines — positioning JBG Global Solutions as a leader in the next wave of digital enterprise transformation.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== LEADERSHIP TEAM ==================== -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge">Our People</div>
+                <h2 class="section-title">Leadership <span class="gradient-text">Team</span></h2>
+                <p class="section-subtitle">Visionary leaders with decades of global experience driving innovation and excellence across every domain.</p>
+            </div>
+            <div class="leadership-grid stagger-children">
+                <!-- Leader 1: Founder & CEO -->
+                <div class="leader-card reveal">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&q=80" alt="Rajiv J - Founder & CEO" class="leader-photo">
+                    <div class="leader-info">
+                        <h3>Rajiv J</h3>
+                        <div class="leader-title">Founder & Chief Executive Officer</div>
+                        <p class="leader-bio">20+ years in enterprise IT strategy, digital transformation, and building high-performing global delivery organizations from the ground up.</p>
+                        <div class="leader-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Leader 2: CTO -->
+                <div class="leader-card reveal">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&q=80" alt="Priya Sharma - CTO" class="leader-photo">
+                    <div class="leader-info">
+                        <h3>Priya Sharma</h3>
+                        <div class="leader-title">Chief Technology Officer</div>
+                        <p class="leader-bio">Former engineering lead at a Fortune 100 tech company, specializing in cloud-native architecture, AI/ML platforms, and engineering excellence.</p>
+                        <div class="leader-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Leader 3: COO -->
+                <div class="leader-card reveal">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=400&h=400&fit=crop&q=80" alt="Arjun Mehta - COO" class="leader-photo">
+                    <div class="leader-info">
+                        <h3>Arjun Mehta</h3>
+                        <div class="leader-title">Chief Operating Officer</div>
+                        <p class="leader-bio">Operational strategist with 18+ years driving efficiency, scaling global delivery centers, and building resilient supply chains for IT services firms.</p>
+                        <div class="leader-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Leader 4: VP Engineering -->
+                <div class="leader-card reveal">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&q=80" alt="Ananya Reddy - VP Engineering" class="leader-photo">
+                    <div class="leader-info">
+                        <h3>Ananya Reddy</h3>
+                        <div class="leader-title">Vice President, Engineering</div>
+                        <p class="leader-bio">Passionate engineering leader driving DevOps culture, platform modernization, and full-stack delivery excellence across distributed teams globally.</p>
+                        <div class="leader-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== CAPABILITIES ==================== -->
+    <section class="section" style="background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge">What We Do Best</div>
+                <h2 class="section-title">Our <span class="gradient-text">Capabilities</span></h2>
+                <p class="section-subtitle">End-to-end expertise across the technology value chain — from strategy through execution and beyond.</p>
+            </div>
+            <div class="capabilities-grid stagger-children">
+                <div class="capability-item reveal">
                     <div class="cap-icon"><i class="fas fa-brain"></i></div>
-                    <h4>AI, ML & Quantum AI Solutions</h4>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Intelligent automation, NLP, computer vision, predictive analytics, and custom ML model development powering next-generation enterprise intelligence.</p>
                 </div>
-                <div class="capability-item">
+                <div class="capability-item reveal">
+                    <div class="cap-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud & Infrastructure</h3>
+                    <p>Multi-cloud architecture, cloud migration, managed services, DevOps transformation, and infrastructure-as-code for scalable, resilient platforms.</p>
+                </div>
+                <div class="capability-item reveal">
                     <div class="cap-icon"><i class="fas fa-robot"></i></div>
-                    <h4>Automation & Analytics</h4>
+                    <h3>Automation & RPA</h3>
+                    <p>End-to-end process automation using UiPath, Automation Anywhere, and custom bots — reducing costs by up to 70% while improving accuracy and speed.</p>
                 </div>
-                <div class="capability-item">
+                <div class="capability-item reveal">
                     <div class="cap-icon"><i class="fas fa-bullhorn"></i></div>
-                    <h4>Digital Marketing & Growth</h4>
+                    <h3>Digital Marketing</h3>
+                    <p>Full-funnel digital strategies including SEO, SEM, social media, content marketing, performance analytics, and conversion rate optimization.</p>
                 </div>
-                <div class="capability-item">
-                    <div class="cap-icon"><i class="fas fa-headset"></i></div>
-                    <h4>Non-IT & Managed Services</h4>
+                <div class="capability-item reveal">
+                    <div class="cap-icon"><i class="fas fa-users-cog"></i></div>
+                    <h3>IT Staffing & Consulting</h3>
+                    <p>Contract, contract-to-hire, and permanent staffing of certified technology professionals across all major platforms, tools, and methodologies.</p>
                 </div>
-                <div class="capability-item">
-                    <div class="cap-icon"><i class="fas fa-building"></i></div>
-                    <h4>Interior & Infrastructure Development</h4>
+                <div class="capability-item reveal">
+                    <div class="cap-icon"><i class="fas fa-hard-hat"></i></div>
+                    <h3>Infrastructure Development</h3>
+                    <p>Smart city solutions, data center design, network engineering, physical infrastructure planning, and large-scale project execution.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Social Good Section -->
-    <section class="section social-good">
+
+    <!-- ==================== GLOBAL PRESENCE ==================== -->
+    <section class="section global-section">
         <div class="container">
-            <div class="section-header">
-                <span class="section-badge">
-                    <i class="fas fa-heart"></i>
-                    Social Good
-                </span>
-                <h2 class="section-title">
-                    Our <span class="gradient-text">Commitment</span> to Society
-                </h2>
-                <p class="section-subtitle">
-                    At JBG Global Solutions, we believe in responsible growth and community impact.
-                </p>
+            <div class="section-header reveal">
+                <div class="section-badge">Where We Operate</div>
+                <h2 class="section-title">Our Global <span class="gradient-text">Presence</span></h2>
+                <p class="section-subtitle">Strategically positioned across continents to deliver seamless, round-the-clock service to clients worldwide.</p>
             </div>
-            
-            <div class="social-grid">
-                <div class="social-item">
-                    <div class="social-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <h4>Digital Skill Development</h4>
-                    <p>Supporting education and digital literacy programs</p>
+            <div class="global-grid reveal">
+                <div class="global-image reveal-left">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&h=600&fit=crop&q=80" alt="JBG Global Office Network" class="img-reveal">
                 </div>
-                <div class="social-item">
-                    <div class="social-icon"><i class="fas fa-leaf"></i></div>
-                    <h4>Sustainable Practices</h4>
-                    <p>Promoting sustainable infrastructure and operations</p>
-                </div>
-                <div class="social-item">
-                    <div class="social-icon"><i class="fas fa-lightbulb"></i></div>
-                    <h4>Innovation & Employment</h4>
-                    <p>Encouraging innovation and creating job opportunities</p>
-                </div>
-                <div class="social-item">
-                    <div class="social-icon"><i class="fas fa-handshake"></i></div>
-                    <h4>Ethical Business</h4>
-                    <p>Ethical, inclusive, and responsible business practices</p>
+                <div class="global-locations reveal-right stagger-children">
+                    <div class="location-card">
+                        <div class="location-icon india"><i class="fas fa-landmark"></i></div>
+                        <div class="location-details">
+                            <h4>India — Hyderabad</h4>
+                            <p>Global Headquarters & Innovation Center</p>
+                        </div>
+                        <span class="location-badge hq">HQ</span>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-icon usa"><i class="fas fa-flag-usa"></i></div>
+                        <div class="location-details">
+                            <h4>United States</h4>
+                            <p>Client Engagement & Delivery Hub</p>
+                        </div>
+                        <span class="location-badge office">Office</span>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-icon uk"><i class="fas fa-crown"></i></div>
+                        <div class="location-details">
+                            <h4>United Kingdom</h4>
+                            <p>European Operations & Consulting</p>
+                        </div>
+                        <span class="location-badge office">Office</span>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-icon me"><i class="fas fa-mosque"></i></div>
+                        <div class="location-details">
+                            <h4>Middle East</h4>
+                            <p>Regional Delivery & Infrastructure Services</p>
+                        </div>
+                        <span class="location-badge office">Office</span>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-icon sg"><i class="fas fa-city"></i></div>
+                        <div class="location-details">
+                            <h4>Singapore</h4>
+                            <p>APAC Business Development & Solutions</p>
+                        </div>
+                        <span class="location-badge office">Office</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="section cta-section">
+
+    <!-- ==================== AWARDS & CERTIFICATIONS ==================== -->
+    <section class="section awards-strip">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge">Recognition</div>
+                <h2 class="section-title">Awards & <span class="gradient-text">Certifications</span></h2>
+                <p class="section-subtitle">Globally recognized certifications and partnerships that validate our commitment to security, quality, and innovation.</p>
+            </div>
+            <div class="awards-row stagger-children">
+                <div class="award-badge reveal">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>ISO 27001 Certified</span>
+                </div>
+                <div class="award-badge reveal">
+                    <i class="fas fa-lock"></i>
+                    <span>SOC 2 Type II</span>
+                </div>
+                <div class="award-badge reveal">
+                    <i class="fas fa-user-shield"></i>
+                    <span>GDPR Compliant</span>
+                </div>
+                <div class="award-badge reveal">
+                    <i class="fab fa-aws"></i>
+                    <span>AWS Partner</span>
+                </div>
+                <div class="award-badge reveal">
+                    <i class="fab fa-microsoft"></i>
+                    <span>Azure Partner</span>
+                </div>
+                <div class="award-badge reveal">
+                    <i class="fab fa-google"></i>
+                    <span>Google Cloud Partner</span>
+                </div>
+                <div class="award-badge reveal">
+                    <i class="fas fa-handshake"></i>
+                    <span>NASSCOM Member</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== SOCIAL GOOD / CSR ==================== -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge">Giving Back</div>
+                <h2 class="section-title">Social Responsibility & <span class="gradient-text">Impact</span></h2>
+                <p class="section-subtitle">We believe that technology has the power to transform lives — and we are committed to using it responsibly and inclusively.</p>
+            </div>
+            <div class="csr-grid stagger-children">
+                <div class="csr-card reveal">
+                    <div class="csr-icon blue"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Digital Skills for All</h3>
+                    <p>Training underprivileged youth in coding, cloud computing, and digital literacy through free workshops, bootcamps, and scholarship programs across India.</p>
+                </div>
+                <div class="csr-card reveal">
+                    <div class="csr-icon green"><i class="fas fa-leaf"></i></div>
+                    <h3>Sustainability First</h3>
+                    <p>Committed to carbon-neutral operations by 2028 through green data centers, remote-first culture, renewable energy adoption, and sustainable procurement practices.</p>
+                </div>
+                <div class="csr-card reveal">
+                    <div class="csr-icon purple"><i class="fas fa-rocket"></i></div>
+                    <h3>Innovation & Employment</h3>
+                    <p>Creating meaningful employment for 500+ professionals and investing in startup incubation programs, hackathons, and innovation challenges that fuel the next generation of builders.</p>
+                </div>
+                <div class="csr-card reveal">
+                    <div class="csr-icon orange"><i class="fas fa-balance-scale"></i></div>
+                    <h3>Ethical Business Practices</h3>
+                    <p>Operating with full transparency, anti-corruption policies, fair-trade partnerships, and a zero-tolerance stance on unethical behavior across our entire value chain.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="cta-section">
         <div class="container">
             <div class="cta-content">
                 <div class="cta-text">
@@ -242,39 +1060,37 @@
                     <p>Let's transform your business together with cutting-edge solutions</p>
                 </div>
                 <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary btn-large">
-                        <i class="fas fa-phone"></i>
-                        <span>Talk to Our Experts</span>
+                    <a href="contact.html" class="btn btn-white btn-large">
+                        <i class="fas fa-phone"></i> <span>Talk to Our Experts</span>
                     </a>
-                    <a href="services.html" class="btn btn-outline btn-large">
-                        <span>Explore Services</span>
-                        <i class="fas fa-arrow-right"></i>
+                    <a href="schedule-demo.html" class="btn btn-outline btn-large" style="border-color:white;color:white;">
+                        <i class="fas fa-calendar-alt"></i> <span>Schedule a Demo</span>
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+
+    <!-- ==================== FOOTER ==================== -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="footer-logo">
-                        <object type="image/svg+xml" data="assets/images/jbg-logo.svg" class="footer-jbg-logo" style="width: 50px; height: 50px;">JBG</object>
+                        <div class="logo-icon">
+                            <object type="image/svg+xml" data="assets/images/jbg-logo.svg" style="width:36px;height:36px;border-radius:8px;">JBG</object>
+                        </div>
                         <span>JBG Global Solutions</span>
                     </div>
-                    <p class="footer-description">
-                        Global transformation partner delivering innovative solutions across IT, AI, Digital Marketing, and Infrastructure Development.
-                    </p>
+                    <p class="footer-description">Global transformation partner delivering innovative solutions across IT, AI, Digital Marketing, and Infrastructure Development.</p>
                     <div class="social-links">
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul>
@@ -285,7 +1101,6 @@
                         <li><a href="careers.html">Careers</a></li>
                     </ul>
                 </div>
-                
                 <div class="footer-col">
                     <h4>Services</h4>
                     <ul>
@@ -296,7 +1111,6 @@
                         <li><a href="services.html">Infrastructure</a></li>
                     </ul>
                 </div>
-                
                 <div class="footer-col">
                     <h4>Resources</h4>
                     <ul>
@@ -304,10 +1118,8 @@
                         <li><a href="#">Case Studies</a></li>
                         <li><a href="#">White-papers</a></li>
                         <li><a href="#">Industry Updates</a></li>
-                        <li><a href="#">Technology Trends</a></li>
                     </ul>
                 </div>
-                
                 <div class="footer-col">
                     <h4>Contact Us</h4>
                     <ul class="contact-info">
@@ -317,57 +1129,25 @@
                     </ul>
                 </div>
             </div>
-            
             <div class="footer-bottom">
-                <p>&copy; 2024 JBG Global Solutions Private Limited. All Rights Reserved.</p>
+                <p>&copy; 2026 JBG Global Solutions Private Limited. All Rights Reserved.</p>
                 <div class="footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="assets/js/expo-3d.js"></script>
-    <script>
-        function createStarfield() {
-            const starfield = document.getElementById('starfield');
-            if (!starfield) return;
-            for (let i = 0; i < 150; i++) {
-                const star = document.createElement('div');
-                star.className = 'star';
-                star.style.left = Math.random() * 100 + '%';
-                star.style.top = Math.random() * 100 + '%';
-                star.style.setProperty('--duration', (Math.random() * 3 + 2) + 's');
-                star.style.animationDelay = Math.random() * 3 + 's';
-                starfield.appendChild(star);
-            }
-        }
-        
-        function createParticles() {
-            const particles = document.getElementById('particles');
-            if (!particles) return;
-            for (let i = 0; i < 50; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.top = Math.random() * 100 + '%';
-                particle.style.animationDuration = (Math.random() * 20 + 10) + 's';
-                particle.style.animationDelay = Math.random() * 10 + 's';
-                particles.appendChild(particle);
-            }
-        }
-        
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-        }
-        
-        document.addEventListener('DOMContentLoaded', () => {
-            createStarfield();
-            createParticles();
-        });
-    </script>
-    <script src="assets/js/chatbot.js"></script>
+
+    <!-- ==================== FLOATING CTA + SCRIPTS ==================== -->
+    <script src="assets/js/site.js"></script>
+    <div class="floating-cta">
+        <a href="contact.html" class="floating-cta-btn">
+            <i class="fas fa-headset"></i>
+            <span>Talk to Experts</span>
+        </a>
+    </div>
+
 </body>
 </html>

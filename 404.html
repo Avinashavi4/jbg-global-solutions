@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - JBG Global Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #0a0e1a 0%, #1a1e3a 50%, #0a0e1a 100%);
+            text-align: center;
+            padding: 40px 24px;
+            position: relative;
+            overflow: hidden;
+        }
+        .error-page::before {
+            content: '';
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(59,130,246,0.08) 0%, transparent 70%);
+            top: -200px;
+            right: -200px;
+            border-radius: 50%;
+        }
+        .error-page::after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(6,182,212,0.06) 0%, transparent 70%);
+            bottom: -100px;
+            left: -100px;
+            border-radius: 50%;
+        }
+        .error-content {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+        }
+        .error-code {
+            font-size: clamp(6rem, 15vw, 10rem);
+            font-weight: 900;
+            background: linear-gradient(135deg, #3b82f6, #06b6d4, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1;
+            margin-bottom: 16px;
+            letter-spacing: -0.04em;
+        }
+        .error-title {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 16px;
+        }
+        .error-description {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.55);
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+        .error-actions {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .error-actions a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 32px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .error-actions .btn-primary {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: #fff;
+            box-shadow: 0 4px 20px rgba(59,130,246,0.3);
+        }
+        .error-actions .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(59,130,246,0.4);
+        }
+        .error-actions .btn-outline {
+            border: 2px solid rgba(255,255,255,0.2);
+            color: rgba(255,255,255,0.8);
+            background: rgba(255,255,255,0.03);
+        }
+        .error-actions .btn-outline:hover {
+            border-color: rgba(255,255,255,0.4);
+            color: #fff;
+            background: rgba(255,255,255,0.06);
+        }
+        .error-links {
+            margin-top: 48px;
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .error-links a {
+            color: rgba(255,255,255,0.4);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        .error-links a:hover {
+            color: #3b82f6;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-page">
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1 class="error-title">Page Not Found</h1>
+            <p class="error-description">
+                The page you're looking for doesn't exist or has been moved.
+                Let's get you back on track.
+            </p>
+            <div class="error-actions">
+                <a href="index.html" class="btn-primary">
+                    <i class="fas fa-home"></i> Back to Home
+                </a>
+                <a href="contact.html" class="btn-outline">
+                    <i class="fas fa-headset"></i> Contact Support
+                </a>
+            </div>
+            <div class="error-links">
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="products.html">Products</a>
+                <a href="solutions.html">Solutions</a>
+                <a href="careers.html">Careers</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
