@@ -5805,11 +5805,6 @@ img[loading="lazy"] {
     line-height: 1.7;
     opacity: .9;
 }
-/* Hero label visible on inner pages (no carousel slide wrapper) */
-.ip-hero-body .hp-hero-label {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 /* ---------- IP SECTIONS ---------- */
 .ip-section {
