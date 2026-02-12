@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JBG Global Solutions &mdash; Enterprise AI, Cloud &amp; Digital Transformation</title>
+    <meta name="description" content="JBG Global Solutions builds AI-first platforms, cloud-native systems, and digital transformation solutions for enterprises worldwide. 500+ engineers. 200+ clients. 15+ years.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <link rel="stylesheet" href="assets/css/awwwards.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body class="aw-page">
+
+<!-- Preloader -->
+<div class="preloader" id="preloader">
+    <div class="preloader-inner">
+        <div class="preloader-logo">
+            <svg viewBox="0 0 80 80" class="preloader-ring"><circle cx="40" cy="40" r="36" stroke="url(#pg)" stroke-width="3" fill="none" stroke-linecap="round"/><defs><linearGradient id="pg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00ff88"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs></svg>
+            <span class="preloader-text">JBG</span>
+        </div>
+        <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+    </div>
+</div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <div class="logo-icon"><img src="assets/images/jbg-logo.png" alt="JBG Global Solutions" style="width:42px;height:42px;border-radius:10px;object-fit:contain;"></div>
+            <div class="logo-text"><span class="brand">JBG Global</span><span class="tagline">Solutions Pvt Ltd</span></div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html" class="nav-cta">Talk to Experts</a></li>
+        </ul>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+</nav>
+
+<!-- ===== HERO — IMMERSIVE 3D ===== -->
+<section class="aw-hero">
+    <div class="aw-hero-bg-img"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80" alt="" loading="eager"></div>
+    <div class="aw-hero-grid"></div>
+    <div class="aw-hero-orb aw-orb-1"></div>
+    <div class="aw-hero-orb aw-orb-2"></div>
+    <div class="aw-hero-orb aw-orb-3"></div>
+    <div class="aw-hero-noise"></div>
+
+    <div class="container aw-hero-inner">
+        <div class="aw-hero-badge">
+            <span class="aw-badge-dot"></span>
+            Enterprise AI &amp; Cloud
+        </div>
+
+        <h1 class="aw-hero-title">
+            <span class="aw-title-line"><span>Experience</span></span>
+            <span class="aw-title-line aw-title-accent"><span>JBG Global</span></span>
+        </h1>
+
+        <p class="aw-hero-tagline">We architect AI-first platforms and cloud-native systems<br>that transform enterprises from the inside out.</p>
+
+        <div class="aw-hero-actions">
+            <a href="contact.html" class="aw-btn-neon">Start a Project <i class="fas fa-arrow-right"></i></a>
+            <a href="products.html" class="aw-btn-ghost">Explore Products</a>
+        </div>
+
+        <div class="aw-hero-trust">
+            <div class="aw-trust-item"><i class="fas fa-shield-halved"></i> ISO 27001</div>
+            <div class="aw-trust-item"><i class="fab fa-aws"></i> AWS Partner</div>
+            <div class="aw-trust-item"><i class="fas fa-users"></i> 500+ Engineers</div>
+            <div class="aw-trust-item"><i class="fas fa-star"></i> 4.9/5 Rating</div>
+        </div>
+    </div>
+
+    <!-- Floating 3D Product Cards -->
+    <div class="aw-hero-floats">
+        <div class="aw-float-card aw-float-card-1">
+            <div class="aw-float-inner">
+                <div class="aw-float-img"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=320&h=200&fit=crop&q=80" alt="NeuralMesh AI" loading="eager"></div>
+                <div class="aw-float-info"><i class="fas fa-network-wired"></i><span>NeuralMesh&trade;</span></div>
+            </div>
+        </div>
+        <div class="aw-float-card aw-float-card-2">
+            <div class="aw-float-inner">
+                <div class="aw-float-img"><img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?w=320&h=200&fit=crop&q=80" alt="SentinelAI Security" loading="eager"></div>
+                <div class="aw-float-info"><i class="fas fa-shield-virus"></i><span>SentinelAI&trade;</span></div>
+            </div>
+        </div>
+        <div class="aw-float-card aw-float-card-3">
+            <div class="aw-float-inner">
+                <div class="aw-float-img"><img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=320&h=200&fit=crop&q=80" alt="CloudSync Infrastructure" loading="eager"></div>
+                <div class="aw-float-info"><i class="fas fa-cloud"></i><span>CloudSync&trade;</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="aw-scroll-hint">
+        <span>Scroll</span>
+        <div class="aw-scroll-line"></div>
+    </div>
+</section>
+
+<!-- ===== CAPABILITIES — GLASS CARDS ===== -->
+<section class="aw-section" id="capabilities">
+    <div class="container">
+        <div class="aw-section-head">
+            <span class="aw-overline">What We Build</span>
+            <h2 class="aw-heading">Capabilities that<br><span class="aw-text-accent">redefine enterprise</span></h2>
+        </div>
+        <div class="aw-glass-grid">
+            <div class="aw-glass-card aw-reveal">
+                <div class="aw-card-glow"></div>
+                <div class="aw-card-img"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=340&fit=crop&q=80" alt="AI neural network visualization" loading="lazy"></div>
+                <div class="aw-card-icon"><i class="fas fa-brain"></i></div>
+                <h3>AI &amp; Intelligence</h3>
+                <p>From NLP pipelines to computer vision, we build production-grade AI systems that learn, adapt, and deliver measurable outcomes &mdash; not just demonstrations.</p>
+                <a href="services.html" class="aw-card-link">Explore <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="aw-glass-card aw-reveal">
+                <div class="aw-card-glow"></div>
+                <div class="aw-card-img"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=340&fit=crop&q=80" alt="Cloud infrastructure visualization" loading="lazy"></div>
+                <div class="aw-card-icon"><i class="fas fa-cloud"></i></div>
+                <h3>Cloud &amp; Scale</h3>
+                <p>Multi-cloud orchestration, Kubernetes at scale, and FinOps intelligence. We make infrastructure invisible so you can focus on building what matters.</p>
+                <a href="services.html" class="aw-card-link">Explore <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="aw-glass-card aw-reveal">
+                <div class="aw-card-glow"></div>
+                <div class="aw-card-img"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=340&fit=crop&q=80" alt="Digital transformation dashboard" loading="lazy"></div>
+                <div class="aw-card-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                <h3>Digital &amp; Experience</h3>
+                <p>Digital transformation that actually transforms. Customer portals, process automation, and data platforms built for how people actually work.</p>
+                <a href="services.html" class="aw-card-link">Explore <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== BRAND STORY — VISUAL SHOWCASE ===== -->
+<section class="aw-section aw-section-alt" id="showcase">
+    <div class="container">
+        <div class="aw-showcase">
+            <div class="aw-showcase-visual aw-reveal">
+                <div class="aw-showcase-main">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=560&fit=crop&q=80" alt="JBG engineering team collaborating" loading="lazy">
+                </div>
+                <div class="aw-showcase-stack">
+                    <div class="aw-showcase-thumb">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&h=280&fit=crop&q=80" alt="Strategy session" loading="lazy">
+                    </div>
+                    <div class="aw-showcase-thumb">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=280&fit=crop&q=80" alt="Data analytics dashboard" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="aw-showcase-text aw-reveal">
+                <span class="aw-overline">Who We Are</span>
+                <h2 class="aw-heading">15+ years of building<br><span class="aw-text-accent">what others can&rsquo;t</span></h2>
+                <p>From a compact team of 8 engineers in Hyderabad, we&rsquo;ve grown into a 500+ member force serving enterprises across banking, healthcare, retail, manufacturing, and energy sectors globally.</p>
+                <div class="aw-showcase-stats">
+                    <div class="aw-showcase-stat"><strong>98%</strong><span>Client Retention</span></div>
+                    <div class="aw-showcase-stat"><strong>200+</strong><span>Enterprises</span></div>
+                    <div class="aw-showcase-stat"><strong>5</strong><span>Global Offices</span></div>
+                </div>
+                <a href="about.html" class="aw-btn-outline">Our Story <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== BRAND METRICS — KINETIC TYPOGRAPHY ===== -->
+<section class="aw-section aw-section-alt" id="metrics">
+    <div class="container">
+        <div class="aw-section-head aw-head-center">
+            <span class="aw-overline">Impact</span>
+            <h2 class="aw-heading">Numbers that<br><span class="aw-text-accent">speak for themselves</span></h2>
+        </div>
+        <div class="aw-metrics-grid">
+            <div class="aw-metric aw-reveal">
+                <span class="aw-metric-number" data-target="400">0</span><span class="aw-metric-suffix">%</span>
+                <span class="aw-metric-label">Average Client ROI</span>
+            </div>
+            <div class="aw-metric aw-reveal">
+                <span class="aw-metric-number" data-target="500">0</span><span class="aw-metric-suffix">+</span>
+                <span class="aw-metric-label">Engineers Worldwide</span>
+            </div>
+            <div class="aw-metric aw-reveal">
+                <span class="aw-metric-number" data-target="98">0</span><span class="aw-metric-suffix">%</span>
+                <span class="aw-metric-label">Client Retention Rate</span>
+            </div>
+            <div class="aw-metric aw-reveal">
+                <span class="aw-metric-number" data-target="200">0</span><span class="aw-metric-suffix">+</span>
+                <span class="aw-metric-label">Enterprises Served</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FLAGSHIP PRODUCTS — 3D CARDS ===== -->
+<section class="aw-section" id="products">
+    <div class="container">
+        <div class="aw-section-head">
+            <span class="aw-overline">Flagship Products</span>
+            <h2 class="aw-heading">Built by us.<br><span class="aw-text-accent">Engineered for you.</span></h2>
+        </div>
+        <div class="aw-products-grid">
+            <div class="aw-product-card aw-reveal">
+                <div class="aw-product-badge">New &mdash; 2025</div>
+                <div class="aw-product-mockup"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=700&h=400&fit=crop&q=80" alt="NeuralMesh AI Platform" loading="lazy"></div>
+                <div class="aw-product-icon"><i class="fas fa-network-wired"></i></div>
+                <h3>JBG NeuralMesh&trade;</h3>
+                <p>Agentic AI orchestration platform. Deploy autonomous multi-agent workflows that reason, plan, and execute across your entire enterprise stack.</p>
+                <ul class="aw-product-features">
+                    <li><i class="fas fa-check"></i> Multi-agent orchestration engine</li>
+                    <li><i class="fas fa-check"></i> SAP / Salesforce / ServiceNow native</li>
+                    <li><i class="fas fa-check"></i> SOC 2 &amp; HIPAA compliant</li>
+                </ul>
+                <a href="products.html" class="aw-btn-outline">Request Early Access <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="aw-product-card aw-reveal">
+                <div class="aw-product-badge">New &mdash; 2025</div>
+                <div class="aw-product-mockup"><img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?w=700&h=400&fit=crop&q=80" alt="SentinelAI Security Platform" loading="lazy"></div>
+                <div class="aw-product-icon"><i class="fas fa-shield-virus"></i></div>
+                <h3>JBG SentinelAI&trade;</h3>
+                <p>Autonomous cybersecurity that thinks like an analyst. Sub-90-second threat containment with temporal attack-chain reasoning and self-healing infrastructure.</p>
+                <ul class="aw-product-features">
+                    <li><i class="fas fa-check"></i> Autonomous threat response</li>
+                    <li><i class="fas fa-check"></i> Self-healing infrastructure</li>
+                    <li><i class="fas fa-check"></i> Zero-day protection engine</li>
+                </ul>
+                <a href="products.html" class="aw-btn-outline">Request Early Access <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="aw-products-more">
+            <a href="products.html" class="aw-link-arrow">View all 6 products <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== INTEGRATIONS — MARQUEE ===== -->
+<section class="aw-section aw-section-alt" id="partners">
+    <div class="container">
+        <div class="aw-section-head aw-head-center">
+            <span class="aw-overline">Trusted By</span>
+        </div>
+    </div>
+    <div class="aw-marquee">
+        <div class="aw-marquee-track">
+            <span class="aw-marquee-item"><i class="fab fa-aws"></i> AWS</span>
+            <span class="aw-marquee-item"><i class="fab fa-microsoft"></i> Microsoft Azure</span>
+            <span class="aw-marquee-item"><i class="fab fa-google"></i> Google Cloud</span>
+            <span class="aw-marquee-item"><i class="fab fa-salesforce"></i> Salesforce</span>
+            <span class="aw-marquee-item"><i class="fas fa-cube"></i> SAP</span>
+            <span class="aw-marquee-item"><i class="fas fa-snowflake"></i> Snowflake</span>
+            <span class="aw-marquee-item"><i class="fab fa-docker"></i> Docker</span>
+            <span class="aw-marquee-item"><i class="fas fa-dharmachakra"></i> Kubernetes</span>
+            <span class="aw-marquee-item"><i class="fab fa-aws"></i> AWS</span>
+            <span class="aw-marquee-item"><i class="fab fa-microsoft"></i> Microsoft Azure</span>
+            <span class="aw-marquee-item"><i class="fab fa-google"></i> Google Cloud</span>
+            <span class="aw-marquee-item"><i class="fab fa-salesforce"></i> Salesforce</span>
+            <span class="aw-marquee-item"><i class="fas fa-cube"></i> SAP</span>
+            <span class="aw-marquee-item"><i class="fas fa-snowflake"></i> Snowflake</span>
+            <span class="aw-marquee-item"><i class="fab fa-docker"></i> Docker</span>
+            <span class="aw-marquee-item"><i class="fas fa-dharmachakra"></i> Kubernetes</span>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PRICING — STAGGERED TIERS ===== -->
+<section class="aw-section" id="pricing">
+    <div class="container">
+        <div class="aw-section-head aw-head-center">
+            <span class="aw-overline">Engagement Models</span>
+            <h2 class="aw-heading">Start at any scale.<br><span class="aw-text-accent">Grow without limits.</span></h2>
+        </div>
+        <div class="aw-pricing-grid">
+            <div class="aw-price-card aw-reveal">
+                <div class="aw-price-tier">Starter</div>
+                <div class="aw-price-amount">Project-Based</div>
+                <p>Focused delivery for MVPs, proofs of concept, and single-workstream initiatives.</p>
+                <ul class="aw-price-features">
+                    <li><i class="fas fa-check"></i> Dedicated dev team (3&ndash;5)</li>
+                    <li><i class="fas fa-check"></i> 2-week sprint cycles</li>
+                    <li><i class="fas fa-check"></i> Weekly progress reports</li>
+                    <li><i class="fas fa-check"></i> Full code ownership transfer</li>
+                </ul>
+                <a href="contact.html" class="aw-btn-outline">Get Started <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="aw-price-card aw-price-featured aw-reveal">
+                <div class="aw-price-pop">Most Popular</div>
+                <div class="aw-price-tier">Growth</div>
+                <div class="aw-price-amount">Retainer</div>
+                <p>Scaling teams for multi-workstream programs with dedicated project management and architecture.</p>
+                <ul class="aw-price-features">
+                    <li><i class="fas fa-check"></i> Scalable team (5&ndash;20+)</li>
+                    <li><i class="fas fa-check"></i> Dedicated PM &amp; architect</li>
+                    <li><i class="fas fa-check"></i> CI/CD &amp; DevOps included</li>
+                    <li><i class="fas fa-check"></i> Monthly business reviews</li>
+                    <li><i class="fas fa-check"></i> Priority support</li>
+                </ul>
+                <a href="contact.html" class="aw-btn-neon">Talk to Sales <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="aw-price-card aw-reveal">
+                <div class="aw-price-tier">Enterprise</div>
+                <div class="aw-price-amount">Custom</div>
+                <p>Dedicated engineering pods, custom SLAs, on-site options, and executive sponsorship for large-scale transformation.</p>
+                <ul class="aw-price-features">
+                    <li><i class="fas fa-check"></i> Dedicated pod (20+)</li>
+                    <li><i class="fas fa-check"></i> On-site &amp; hybrid delivery</li>
+                    <li><i class="fas fa-check"></i> Custom SLA &amp; compliance</li>
+                    <li><i class="fas fa-check"></i> Executive steering committee</li>
+                    <li><i class="fas fa-check"></i> 24/7 priority support</li>
+                </ul>
+                <a href="contact.html" class="aw-btn-outline">Contact Us <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== TESTIMONIAL — PARALLAX ===== -->
+<section class="aw-section aw-section-alt" id="testimonial">
+    <div class="container">
+        <div class="aw-testimonial-card aw-reveal">
+            <div class="aw-quote-icon"><i class="fas fa-quote-left"></i></div>
+            <blockquote class="aw-quote-text">
+                JBG Global didn&rsquo;t just deliver a project &mdash; they fundamentally changed how we think about automation. Their NeuralMesh platform processes what used to take our team three weeks in under four hours. The ROI was obvious within the first quarter.
+            </blockquote>
+            <div class="aw-quote-author">
+                <div class="aw-author-avatar"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop&q=80" alt="Vikram Reddy" loading="lazy"></div>
+                <div class="aw-author-info">
+                    <strong>Vikram Reddy</strong>
+                    <span>CTO, Meridian Financial Services</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CASE STUDIES — VISUAL GRID ===== -->
+<section class="aw-section" id="cases">
+    <div class="container">
+        <div class="aw-section-head">
+            <span class="aw-overline">Case Studies</span>
+            <h2 class="aw-heading">Real projects.<br><span class="aw-text-accent">Real outcomes.</span></h2>
+        </div>
+        <div class="aw-cases-grid">
+            <a href="solutions.html" class="aw-case-card aw-case-large aw-reveal">
+                <div class="aw-case-img"><img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=900&h=600&fit=crop&q=80" alt="FMCG Invoice Automation" loading="lazy"></div>
+                <div class="aw-case-overlay"></div>
+                <div class="aw-case-content">
+                    <span class="aw-case-tag">FMCG &middot; Automation</span>
+                    <h3>120K invoices/month processed in 14 countries</h3>
+                    <p>Intelligent document processing reduced cycle from 72 hours to 8 minutes.</p>
+                </div>
+            </a>
+            <a href="solutions.html" class="aw-case-card aw-reveal">
+                <div class="aw-case-img"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=500&fit=crop&q=80" alt="Healthcare Analytics" loading="lazy"></div>
+                <div class="aw-case-overlay"></div>
+                <div class="aw-case-content">
+                    <span class="aw-case-tag">Healthcare &middot; AI</span>
+                    <h3>28% reduction in ER wait times</h3>
+                    <p>Predictive patient flow models across 12 facilities.</p>
+                </div>
+            </a>
+            <a href="solutions.html" class="aw-case-card aw-reveal">
+                <div class="aw-case-img"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=500&fit=crop&q=80" alt="Supply Chain Platform" loading="lazy"></div>
+                <div class="aw-case-overlay"></div>
+                <div class="aw-case-content">
+                    <span class="aw-case-tag">Manufacturing &middot; Cloud</span>
+                    <h3>22% drop in inventory costs</h3>
+                    <p>End-to-end supply chain visibility for 200+ suppliers.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CTA — NEON BLOOM ===== -->
+<section class="aw-cta">
+    <div class="aw-cta-bg"><img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&h=800&fit=crop&q=80" alt="" loading="lazy"></div>
+    <div class="aw-cta-glow"></div>
+    <div class="container">
+        <div class="aw-cta-inner aw-reveal">
+            <h2>Let&rsquo;s Build<br><span class="aw-text-accent">What&rsquo;s Next</span></h2>
+            <p>Whether you&rsquo;re modernizing legacy systems or launching an AI-first product &mdash; we&rsquo;d love to be your engineering partner.</p>
+            <div class="aw-cta-actions">
+                <a href="contact.html" class="aw-btn-neon aw-btn-large">Start the Conversation <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo"><div class="logo-icon"><img src="assets/images/jbg-logo.png" alt="JBG" style="width:36px;height:36px;border-radius:8px;object-fit:contain;"></div><span>JBG Global Solutions</span></div>
+                <p class="footer-description">Enterprise technology partner delivering AI, cloud, and digital transformation solutions for businesses worldwide.</p>
+                <div class="social-links"><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></div>
+            </div>
+            <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="products.html">Products</a></li><li><a href="solutions.html">Solutions</a></li><li><a href="careers.html">Careers</a></li></ul></div>
+            <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">AI &amp; ML Solutions</a></li><li><a href="services.html">Cloud &amp; DevOps</a></li><li><a href="services.html">Digital Transformation</a></li><li><a href="services.html">Automation &amp; RPA</a></li><li><a href="services.html">Data &amp; Analytics</a></li></ul></div>
+            <div class="footer-col"><h4>Solutions</h4><ul><li><a href="products.html">Products</a></li><li><a href="solutions.html">Enterprise Solutions</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+            <div class="footer-col"><h4>Get in Touch</h4><ul class="contact-info"><li><i class="fas fa-envelope"></i> Admin@jbgglobal.com</li><li><i class="fas fa-phone"></i> +91 9063034557</li><li><i class="fas fa-map-marker-alt"></i> Kondapur, Hyderabad, Telangana</li></ul></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 JBG Global Solutions Private Limited. All Rights Reserved.</p><div class="footer-links"><a href="privacy-policy.html">Privacy Policy</a><a href="terms-of-service.html">Terms of Service</a></div></div>
+    </div>
+</footer>
+<div class="floating-cta"><a href="contact.html" class="floating-cta-btn" aria-label="Talk to Experts"><i class="fas fa-headset"></i><span>Talk to Experts</span></a></div>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/awwwards.js"></script>
+</body>
+</html>

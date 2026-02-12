@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - JBG Global Solutions</title>
+    <meta name="description" content="Get in touch with JBG Global Solutions. Talk to our experts about digital transformation, AI, automation, or infrastructure needs.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact Us - JBG Global Solutions">
+    <meta property="og:description" content="Talk to our experts about digital transformation, AI, automation, or infrastructure needs.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&h=630&fit=crop&q=80">
+    <meta property="og:url" content="https://jbgglobal.com/contact">
+    <meta property="og:site_name" content="JBG Global Solutions">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Us - JBG Global Solutions">
+    <meta name="twitter:description" content="Get in touch — digital transformation, AI, automation & infrastructure experts.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&h=630&fit=crop&q=80">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="canonical" href="https://jbgglobal.com/contact">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader"><div class="preloader-inner"><div class="preloader-logo"><svg viewBox="0 0 80 80" class="preloader-ring"><circle cx="40" cy="40" r="36" stroke="url(#pg)" stroke-width="3" fill="none" stroke-linecap="round"/><defs><linearGradient id="pg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#60A5FA"/><stop offset="100%" stop-color="#34D399"/></linearGradient></defs></svg><span class="preloader-text">JBG</span></div><div class="preloader-bar"><div class="preloader-bar-fill"></div></div></div></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="assets/images/jbg-logo.png" alt="JBG Global Solutions" style="width:42px;height:42px;border-radius:10px;object-fit:contain;">
+                </div>
+                <div class="logo-text">
+                    <span class="brand">JBG Global</span>
+                    <span class="tagline">Solutions Pvt Ltd</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html" class="nav-cta active">Talk to Experts</a></li>
+            </ul>
+            <button class="hamburger" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-hero-cinematic">
+        <div class="hero-bg-img"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80" alt="" loading="eager"></div>
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-bg-grain"></div>
+        <div class="hero-inner">
+            <div class="hero-eyebrow"><i class="fas fa-circle"></i> Contact</div>
+            <h1>Let's Start a <span class="hero-accent">Conversation</span></h1>
+            <p>Whether it's a new project, a partnership, or a question — our team is ready to talk.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-dots">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Form -->
+                <div class="contact-form-wrapper reveal-left">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and our team will get back to you within 24 hours</p>
+                    <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        <input type="hidden" name="to_email" value="Admin@jbgglobal.com">
+                        <input type="hidden" name="subject" value="New Contact Form Submission - JBG Global Solutions">
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                        <input type="hidden" name="botcheck" style="display: none;">
+                        <div class="form-row">
+                            <div class="form-group"><label for="firstName">First Name *</label><input type="text" id="firstName" name="firstName" required></div>
+                            <div class="form-group"><label for="lastName">Last Name *</label><input type="text" id="lastName" name="lastName" required></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group"><label for="email">Email Address *</label><input type="email" id="email" name="email" required></div>
+                            <div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone"></div>
+                        </div>
+                        <div class="form-group"><label for="company">Company Name</label><input type="text" id="company" name="company"></div>
+                        <div class="form-group">
+                            <label for="service">Service Interest *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service...</option>
+                                <option value="digital-transformation">Digital & Enterprise Transformation</option>
+                                <option value="ai-ml">AI, ML & Quantum AI Solutions</option>
+                                <option value="automation">Automation & Analytics</option>
+                                <option value="digital-marketing">Digital Marketing & Growth</option>
+                                <option value="managed-services">Non-IT & Managed Services</option>
+                                <option value="infrastructure">Interior & Infrastructure Development</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group"><label for="message">Your Message *</label><textarea id="message" name="message" rows="5" required placeholder="Tell us about your project or requirements..."></textarea></div>
+                        <button type="submit" class="btn btn-primary btn-large"><i class="fas fa-paper-plane"></i> <span>Send Message</span></button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper reveal-right">
+                    <div class="contact-info-card">
+                        <h3>Contact Information</h3>
+                        <p>Reach out to us through any of these channels</p>
+                        <div class="info-items">
+                            <div class="info-item"><div class="info-icon"><i class="fas fa-envelope"></i></div><div class="info-content"><h4>Email Us</h4><p>Admin@jbgglobal.com</p></div></div>
+                            <div class="info-item"><div class="info-icon"><i class="fas fa-phone"></i></div><div class="info-content"><h4>Call Us</h4><p>+91 9063034557</p></div></div>
+                            <div class="info-item"><div class="info-icon"><i class="fas fa-map-marker-alt"></i></div><div class="info-content"><h4>Office Address</h4><p>1-112/26/S/301, SUNVALLY Apartment,</p><p>Kondapur, Serilingampally,</p><p>K.V.Rangareddy- 500084, Telangana</p></div></div>
+                            <div class="info-item"><div class="info-icon"><i class="fas fa-clock"></i></div><div class="info-content"><h4>Business Hours</h4><p>24/7 Support Available</p><p>Global Coverage</p></div></div>
+                        </div>
+                        <div class="social-section">
+                            <h4>Follow Us</h4>
+                            <div class="social-links"><a href="#"><i class="fab fa-linkedin"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-youtube"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="quick-contact-cards">
+                        <div class="quick-card"><div class="qc-icon"><i class="fas fa-briefcase"></i></div><div class="qc-content"><h4>Business Enquiries</h4><p>Admin@jbgglobal.com</p></div></div>
+                        <div class="quick-card"><div class="qc-icon"><i class="fas fa-users"></i></div><div class="qc-content"><h4>Career Enquiries</h4><p>Admin@jbgglobal.com</p></div></div>
+                        <div class="quick-card"><div class="qc-icon"><i class="fas fa-headset"></i></div><div class="qc-content"><h4>Support</h4><p>Admin@jbgglobal.com</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section section-mesh">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Find Us on the <span class="gradient-text">Map</span></h2>
+            </div>
+            <div class="reveal" style="border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.08);height:400px;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2!2d78.3544!3d17.4603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93dc8c5d69df%3A0x19688beb557fa0ee!2sKondapur%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-col"><div class="footer-logo"><div class="logo-icon"><img src="assets/images/jbg-logo.png" alt="JBG Global Solutions" style="width:36px;height:36px;border-radius:8px;object-fit:contain;"></div><span>JBG Global Solutions</span></div><p class="footer-description">Global transformation partner delivering innovative solutions across IT, AI, Digital Marketing, and Infrastructure Development.</p><div class="social-links"><a href="#"><i class="fab fa-linkedin"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div></div><div class="footer-col"><h4>Quick Links</h4><ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="products.html">Products</a></li><li><a href="solutions.html">Solutions</a></li><li><a href="careers.html">Careers</a></li></ul></div><div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">Digital Transformation</a></li><li><a href="services.html">AI & ML Solutions</a></li><li><a href="services.html">Automation & RPA</a></li><li><a href="services.html">Digital Marketing</a></li><li><a href="services.html">Infrastructure</a></li></ul></div><div class="footer-col"><h4>Resources</h4><ul><li><a href="#">Blogs & Insights</a></li><li><a href="#">Case Studies</a></li><li><a href="#">White-papers</a></li><li><a href="#">Industry Updates</a></li></ul></div><div class="footer-col"><h4>Contact Us</h4><ul class="contact-info"><li><i class="fas fa-envelope"></i> Admin@jbgglobal.com</li><li><i class="fas fa-phone"></i> +91 9063034557</li><li><i class="fas fa-map-marker-alt"></i> Kondapur, Hyderabad, Telangana</li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 JBG Global Solutions Private Limited. All Rights Reserved.</p><div class="footer-links"><a href="privacy-policy.html">Privacy Policy</a><a href="terms-of-service.html">Terms of Service</a></div></div></div></footer>
+    
+    <script src="assets/js/site.js"></script>
+    <script>
+        // Contact form submission with Web3Forms
+        const form = document.getElementById('contactForm');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+            
+            const formData = new FormData(form);
+            fetch('https://api.web3forms.com/submit', { method: 'POST', body: formData })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('✅ Thank you for your message! Our team will get back to you within 24 hours.');
+                    form.reset();
+                } else {
+                    alert('❌ There was an error. Please try again or email us at Admin@jbgglobal.com');
+                }
+            })
+            .catch(error => {
+                alert('❌ There was an error. Please try again or email us at Admin@jbgglobal.com');
+            })
+            .finally(() => {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            });
+        });
+    </script>
+
+    <!-- Floating Talk to Experts -->
+    <div class="floating-cta">
+        <a href="contact.html" class="floating-cta-btn">
+            <i class="fas fa-headset"></i>
+            <span>Talk to Experts</span>
+        </a>
+    </div>
+
+</body>
+</html>

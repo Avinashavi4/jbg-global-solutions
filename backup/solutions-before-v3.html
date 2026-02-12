@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions &mdash; JBG Global Solutions</title>
+    <meta name="description" content="Enterprise solutions by JBG Global Solutions — AI-powered platforms, intelligent automation, and cloud-native systems that solve hard problems at scale.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body>
+
+<!-- Preloader -->
+<div class="preloader" id="preloader">
+    <div class="preloader-inner">
+        <div class="preloader-logo">
+            <svg viewBox="0 0 80 80" class="preloader-ring"><circle cx="40" cy="40" r="36" stroke="url(#pg)" stroke-width="3" fill="none" stroke-linecap="round"/><defs><linearGradient id="pg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#60A5FA"/><stop offset="100%" stop-color="#34D399"/></linearGradient></defs></svg>
+            <span class="preloader-text">JBG</span>
+        </div>
+        <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+    </div>
+</div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <div class="logo-icon"><img src="assets/images/jbg-logo.png" alt="JBG Global Solutions" style="width:42px;height:42px;border-radius:10px;object-fit:contain;"></div>
+            <div class="logo-text"><span class="brand">JBG Global</span><span class="tagline">Solutions Pvt Ltd</span></div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="solutions.html" class="active">Solutions</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html" class="nav-cta">Talk to Experts</a></li>
+        </ul>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="ip-hero">
+    <div class="ip-hero-bg"><img src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=1920&h=700&fit=crop&q=80" alt=""></div>
+    <div class="ip-hero-overlay"></div>
+    <div class="ip-hero-body container">
+        <span class="hp-hero-label">Enterprise Solutions</span>
+        <h1>Solve Hard Problems<br>at Scale</h1>
+        <p>AI-first platforms and intelligent systems that transform operations, unlock insights, and accelerate decision-making for the modern enterprise.</p>
+    </div>
+</section>
+
+<!-- ===== INTRO ===== -->
+<section class="ip-section ip-section-white">
+    <div class="container">
+        <div class="ip-split">
+            <div class="ip-split-text">
+                <span class="ip-label">Why JBG Solutions</span>
+                <h2>Technology that works harder than your toughest challenges</h2>
+                <p>We build scalable, secure, and intelligent platforms designed for the complexities of modern enterprise environments. Our solutions don&rsquo;t just digitize processes &mdash; they fundamentally rethink how your organization creates value.</p>
+                <p>Every deployment is architected around your specific constraints: legacy systems, compliance requirements, data gravity, and scale targets. No cookie-cutter playbooks.</p>
+            </div>
+            <div class="ip-split-img">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=640&h=480&fit=crop&q=80" alt="Enterprise Solutions Dashboard" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== IMPACT METRICS ===== -->
+<section class="ip-section ip-section-gray">
+    <div class="container">
+        <div class="ip-mv-grid">
+            <div class="ip-mv-card">
+                <div class="ip-mv-icon"><i class="fas fa-dollar-sign"></i></div>
+                <h3>Reduce Costs</h3>
+                <p>Our clients see an average 35% reduction in operational expenditure within the first year through intelligent automation, infrastructure optimization, and waste elimination.</p>
+            </div>
+            <div class="ip-mv-card">
+                <div class="ip-mv-icon"><i class="fas fa-tachometer-alt"></i></div>
+                <h3>Improve Throughput</h3>
+                <p>From document processing to supply chain orchestration, our systems consistently deliver 4&ndash;8&times; throughput improvements without proportional headcount growth.</p>
+            </div>
+            <div class="ip-mv-card">
+                <div class="ip-mv-icon"><i class="fas fa-brain"></i></div>
+                <h3>Smarter Decisions</h3>
+                <p>Real-time analytics and predictive models turn raw data into actionable intelligence &mdash; reducing decision latency from weeks to minutes across the organization.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SOLUTION AREAS ===== -->
+<section class="ip-section ip-section-white">
+    <div class="container">
+        <div class="ip-center-head">
+            <span class="ip-label">What We Deliver</span>
+            <h2>Solution areas built for enterprise complexity</h2>
+        </div>
+        <div class="ip-svc-grid">
+            <div class="ip-svc-card">
+                <div class="ip-svc-icon"><i class="fas fa-robot"></i></div>
+                <h3>Intelligent Document Processing</h3>
+                <p>AI models that extract, classify, and validate unstructured data from invoices, contracts, claims, and compliance documents with 99.2% accuracy. Integrated OCR, NLP, and workflow routing for end-to-end document lifecycle management.</p>
+                <ul class="ip-svc-list">
+                    <li>Multi-format document ingestion</li>
+                    <li>Context-aware field extraction</li>
+                    <li>Automated validation &amp; exception handling</li>
+                    <li>ERP &amp; workflow system integration</li>
+                </ul>
+            </div>
+            <div class="ip-svc-card">
+                <div class="ip-svc-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>AI-Driven Analytics &amp; Insights</h3>
+                <p>Transform petabytes of enterprise data into actionable intelligence with custom ML models, real-time dashboards, and predictive analytics that surface what matters before it&rsquo;s obvious.</p>
+                <ul class="ip-svc-list">
+                    <li>Business intelligence &amp; executive dashboards</li>
+                    <li>Predictive demand &amp; risk modeling</li>
+                    <li>Streaming data pipelines (Kafka, Spark)</li>
+                    <li>Natural language querying</li>
+                </ul>
+            </div>
+            <div class="ip-svc-card">
+                <div class="ip-svc-icon"><i class="fas fa-sitemap"></i></div>
+                <h3>Digital Transformation Platforms</h3>
+                <p>Comprehensive modernization of legacy stacks, monolith decomposition, and API-first architectures that unlock agility without ripping and replacing decades of investment.</p>
+                <ul class="ip-svc-list">
+                    <li>Legacy-to-cloud migration</li>
+                    <li>Microservices architecture</li>
+                    <li>API management &amp; marketplace</li>
+                    <li>Customer experience re-platforming</li>
+                </ul>
+            </div>
+            <div class="ip-svc-card">
+                <div class="ip-svc-icon"><i class="fas fa-cogs"></i></div>
+                <h3>Business Process Automation</h3>
+                <p>End-to-end workflow orchestration powered by AI process mining, RPA bots, and intelligent routing that eliminates manual handoffs and accelerates cycle times by up to 80%.</p>
+                <ul class="ip-svc-list">
+                    <li>AI-powered process discovery</li>
+                    <li>Attended &amp; unattended RPA bots</li>
+                    <li>Intelligent task routing</li>
+                    <li>Continuous process optimization</li>
+                </ul>
+            </div>
+            <div class="ip-svc-card">
+                <div class="ip-svc-icon"><i class="fas fa-vial"></i></div>
+                <h3>QA Automation &amp; Testing</h3>
+                <p>Shift-left testing frameworks and AI-assisted test generation that catch defects early, accelerate release cycles, and maintain quality across complex distributed systems.</p>
+                <ul class="ip-svc-list">
+                    <li>Automated regression &amp; integration suites</li>
+                    <li>CI/CD pipeline integration</li>
+                    <li>Performance, load &amp; chaos testing</li>
+                    <li>Security &amp; penetration testing</li>
+                </ul>
+            </div>
+            <div class="ip-svc-card">
+                <div class="ip-svc-icon"><i class="fas fa-cloud"></i></div>
+                <h3>Cloud &amp; Infrastructure Modernization</h3>
+                <p>Multi-cloud strategy, Kubernetes orchestration, and infrastructure-as-code that give you elastic scale, cost control, and operational resilience across AWS, Azure, and GCP.</p>
+                <ul class="ip-svc-list">
+                    <li>Cloud migration &amp; landing zones</li>
+                    <li>Hybrid &amp; multi-cloud management</li>
+                    <li>Container orchestration (K8s, ECS)</li>
+                    <li>FinOps &amp; cost optimization</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== INDUSTRIES WE SERVE ===== -->
+<section class="ip-section ip-section-gray">
+    <div class="container">
+        <div class="ip-center-head">
+            <span class="ip-label">Industry Expertise</span>
+            <h2>Deep domain knowledge where it counts</h2>
+        </div>
+        <div class="ip-ind-grid">
+            <div class="ip-ind-chip"><i class="fas fa-university"></i> Banking &amp; Finance</div>
+            <div class="ip-ind-chip"><i class="fas fa-heartbeat"></i> Healthcare &amp; Life Sciences</div>
+            <div class="ip-ind-chip"><i class="fas fa-shopping-cart"></i> Retail &amp; E-Commerce</div>
+            <div class="ip-ind-chip"><i class="fas fa-industry"></i> Manufacturing</div>
+            <div class="ip-ind-chip"><i class="fas fa-bolt"></i> Energy &amp; Utilities</div>
+            <div class="ip-ind-chip"><i class="fas fa-truck"></i> Logistics &amp; Supply Chain</div>
+            <div class="ip-ind-chip"><i class="fas fa-landmark"></i> Government &amp; Public Sector</div>
+            <div class="ip-ind-chip"><i class="fas fa-graduation-cap"></i> Education &amp; Ed-Tech</div>
+            <div class="ip-ind-chip"><i class="fas fa-building"></i> Real Estate &amp; Construction</div>
+            <div class="ip-ind-chip"><i class="fas fa-rocket"></i> Startups &amp; Scale-ups</div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== HOW WE DELIVER ===== -->
+<section class="ip-section ip-section-dark">
+    <div class="container">
+        <div class="ip-center-head ip-light">
+            <span class="ip-label">Delivery Model</span>
+            <h2>How we take you from problem to production</h2>
+        </div>
+        <div class="ip-process-grid">
+            <div class="ip-process-step">
+                <div class="ip-process-num">01</div>
+                <h4>Diagnose &amp; Define</h4>
+                <p>We immerse ourselves in your environment &mdash; mapping systems, interviewing stakeholders, and quantifying pain points before writing a single line of code.</p>
+            </div>
+            <div class="ip-process-step">
+                <div class="ip-process-num">02</div>
+                <h4>Architect &amp; Prototype</h4>
+                <p>Solution blueprints, technology selection, and rapid prototyping. You see a working proof-of-concept within 4&ndash;6 weeks &mdash; not a slide deck.</p>
+            </div>
+            <div class="ip-process-step">
+                <div class="ip-process-num">03</div>
+                <h4>Build &amp; Iterate</h4>
+                <p>Agile sprints with continuous stakeholder feedback. We ship working increments every two weeks, adjusting scope and priority as you learn.</p>
+            </div>
+            <div class="ip-process-step">
+                <div class="ip-process-num">04</div>
+                <h4>Deploy &amp; Evolve</h4>
+                <p>Production-grade deployment with monitoring, runbooks, and knowledge transfer. Post-launch, our teams stay on for optimization, scaling, and feature evolution.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CASE STUDY HIGHLIGHTS ===== -->
+<section class="ip-section ip-section-white">
+    <div class="container">
+        <div class="ip-center-head">
+            <span class="ip-label">Outcomes</span>
+            <h2>What our solutions deliver in practice</h2>
+        </div>
+        <div class="ip-mv-grid">
+            <div class="ip-mv-card">
+                <div class="ip-mv-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                <h3>Invoice Processing for a Global FMCG</h3>
+                <p>Deployed intelligent document processing that handles 120,000+ invoices/month across 14 countries. Reduced processing time from 72 hours to 8 minutes per batch. Error rate dropped from 4.2% to 0.3%.</p>
+            </div>
+            <div class="ip-mv-card">
+                <div class="ip-mv-icon"><i class="fas fa-hospital"></i></div>
+                <h3>Predictive Analytics for a Hospital Network</h3>
+                <p>Built real-time patient flow models that predict bed occupancy 48 hours ahead with 91% accuracy. Reduced emergency department wait times by 28% and improved resource allocation across 12 facilities.</p>
+            </div>
+            <div class="ip-mv-card">
+                <div class="ip-mv-icon"><i class="fas fa-truck-loading"></i></div>
+                <h3>Supply Chain Orchestration for Manufacturing</h3>
+                <p>Designed an end-to-end supply chain visibility platform integrating 200+ suppliers. Achieved 22% reduction in inventory carrying costs and cut order-to-delivery times by 35%.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="hp-partner-cta">
+    <div class="container">
+        <div class="hp-partner-body">
+            <h2>Ready to transform your enterprise?</h2>
+            <p>Let&rsquo;s discuss how our solutions can address your most complex business challenges &mdash; and deliver measurable results, not just proposals.</p>
+            <a href="contact.html" class="hp-partner-btn">Talk to Our Experts <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo"><div class="logo-icon"><img src="assets/images/jbg-logo.png" alt="JBG" style="width:36px;height:36px;border-radius:8px;object-fit:contain;"></div><span>JBG Global Solutions</span></div>
+                <p class="footer-description">Enterprise technology partner delivering AI, cloud, and digital transformation solutions for businesses worldwide.</p>
+                <div class="social-links"><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></div>
+            </div>
+            <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="products.html">Products</a></li><li><a href="solutions.html">Solutions</a></li><li><a href="careers.html">Careers</a></li></ul></div>
+            <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">AI &amp; ML Solutions</a></li><li><a href="services.html">Cloud &amp; DevOps</a></li><li><a href="services.html">Digital Transformation</a></li><li><a href="services.html">Automation &amp; RPA</a></li><li><a href="services.html">Data &amp; Analytics</a></li></ul></div>
+            <div class="footer-col"><h4>Solutions</h4><ul><li><a href="products.html">Products</a></li><li><a href="solutions.html">Enterprise Solutions</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+            <div class="footer-col"><h4>Get in Touch</h4><ul class="contact-info"><li><i class="fas fa-envelope"></i> Admin@jbgglobal.com</li><li><i class="fas fa-phone"></i> +91 9063034557</li><li><i class="fas fa-map-marker-alt"></i> Kondapur, Hyderabad, Telangana</li></ul></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 JBG Global Solutions Private Limited. All Rights Reserved.</p><div class="footer-links"><a href="privacy-policy.html">Privacy Policy</a><a href="terms-of-service.html">Terms of Service</a></div></div>
+    </div>
+</footer>
+<div class="floating-cta"><a href="contact.html" class="floating-cta-btn" aria-label="Talk to Experts"><i class="fas fa-headset"></i><span>Talk to Experts</span></a></div>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

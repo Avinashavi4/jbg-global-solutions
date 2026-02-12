@@ -1,8 +1,88 @@
 /* ============================================
-   JBG Global Solutions - Site Interactions & Animations
+   JBG Global Solutions - Premium Site Interactions
+   World-Class Website Experience
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    // ---- Preloader ----
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                preloader.classList.add('loaded');
+                document.body.style.overflow = '';
+                // Trigger any hero animations after preloader
+                document.querySelectorAll('.hero-home-content.reveal').forEach(el => el.classList.add('active'));
+            }, 2000);
+        });
+        // Fallback: remove preloader after 4 seconds max
+        setTimeout(() => {
+            if (preloader && !preloader.classList.contains('loaded')) {
+                preloader.classList.add('loaded');
+                document.body.style.overflow = '';
+            }
+        }, 4000);
+    }
+
+    // ---- Custom Cursor ----
+    const cursorDot = document.getElementById('cursorDot');
+    const cursorRing = document.getElementById('cursorRing');
+    let mouseX = 0, mouseY = 0;
+    let ringX = 0, ringY = 0;
+
+    if (cursorDot && cursorRing && window.matchMedia('(hover: hover) and (min-width: 1025px)').matches) {
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            cursorDot.style.left = mouseX + 'px';
+            cursorDot.style.top = mouseY + 'px';
+            cursorDot.classList.add('visible');
+            cursorRing.classList.add('visible');
+        });
+
+        // Smooth ring follow
+        function animateRing() {
+            ringX += (mouseX - ringX) * 0.15;
+            ringY += (mouseY - ringY) * 0.15;
+            cursorRing.style.left = ringX + 'px';
+            cursorRing.style.top = ringY + 'px';
+            requestAnimationFrame(animateRing);
+        }
+        animateRing();
+
+        // Hover effect on interactive elements
+        const hoverTargets = document.querySelectorAll('a, button, .btn, .service-card-img, .testimonial-card, .industry-chip, .result-card');
+        hoverTargets.forEach(el => {
+            el.addEventListener('mouseenter', () => cursorRing.classList.add('hover'));
+            el.addEventListener('mouseleave', () => cursorRing.classList.remove('hover'));
+        });
+
+        // Click effect
+        document.addEventListener('mousedown', () => cursorRing.classList.add('clicking'));
+        document.addEventListener('mouseup', () => cursorRing.classList.remove('clicking'));
+
+        // Hide on mouse leave
+        document.addEventListener('mouseleave', () => {
+            cursorDot.classList.remove('visible');
+            cursorRing.classList.remove('visible');
+        });
+        document.addEventListener('mouseenter', () => {
+            cursorDot.classList.add('visible');
+            cursorRing.classList.add('visible');
+        });
+    }
+
+    // ---- Scroll Progress Bar ----
+    const scrollProgress = document.getElementById('scrollProgress');
+    if (scrollProgress) {
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            scrollProgress.style.width = scrollPercent + '%';
+        }, { passive: true });
+    }
 
     // ---- Navbar Scroll Effect ----
     const navbar = document.querySelector('.navbar');
@@ -16,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
             navbar.classList.remove('scrolled');
         }
         lastScroll = currentScroll;
-    });
+    }, { passive: true });
 
     // ---- Mobile Menu Toggle ----
     window.toggleMenu = function() {
@@ -62,33 +142,85 @@ document.addEventListener('DOMContentLoaded', () => {
 
     imgReveals.forEach(el => imgObserver.observe(el));
 
-    // ---- Counter Animation ----
+    // ---- Animated Counter (Hero Stats + General) ----
+    function animateCounter(el) {
+        const target = parseInt(el.dataset.count);
+        const suffix = el.dataset.suffix || '';
+        const duration = 2200;
+        const startTime = performance.now();
+        const startVal = 0;
+
+        function easeOutExpo(t) {
+            return t === 1 ? 1 : 1 - Math.pow(2, -10 * t);
+        }
+
+        function update(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const easedProgress = easeOutExpo(progress);
+            const current = Math.floor(startVal + (target - startVal) * easedProgress);
+
+            el.textContent = current + suffix;
+
+            if (progress < 1) {
+                requestAnimationFrame(update);
+            }
+        }
+
+        requestAnimationFrame(update);
+    }
+
     const counters = document.querySelectorAll('[data-count]');
     const counterObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                const el = entry.target;
-                const target = parseInt(el.dataset.count);
-                const suffix = el.dataset.suffix || '';
-                const duration = 2000;
-                const step = target / (duration / 16);
-                let current = 0;
-
-                const timer = setInterval(() => {
-                    current += step;
-                    if (current >= target) {
-                        current = target;
-                        clearInterval(timer);
-                    }
-                    el.textContent = Math.floor(current) + suffix;
-                }, 16);
-
-                counterObserver.unobserve(el);
+                animateCounter(entry.target);
+                counterObserver.unobserve(entry.target);
             }
         });
     }, { threshold: 0.5 });
 
     counters.forEach(el => counterObserver.observe(el));
+
+    // ---- Magnetic Button Effect ----
+    const magneticBtns = document.querySelectorAll('.magnetic-btn');
+    magneticBtns.forEach(btn => {
+        btn.addEventListener('mousemove', (e) => {
+            const rect = btn.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            btn.style.transform = `translate(${x * 0.25}px, ${y * 0.25}px)`;
+        });
+
+        btn.addEventListener('mouseleave', () => {
+            btn.style.transform = 'translate(0, 0)';
+            btn.style.transition = 'transform 0.4s cubic-bezier(0.4, 0, 0.2, 1)';
+        });
+
+        btn.addEventListener('mouseenter', () => {
+            btn.style.transition = 'transform 0.15s ease';
+        });
+    });
+
+    // ---- 3D Tilt Cards ----
+    const tiltCards = document.querySelectorAll('.tilt-card');
+    tiltCards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width - 0.5;
+            const y = (e.clientY - rect.top) / rect.height - 0.5;
+            card.style.transform = `perspective(800px) rotateY(${x * 10}deg) rotateX(${-y * 10}deg) scale(1.02)`;
+        });
+
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'perspective(800px) rotateY(0) rotateX(0) scale(1)';
+            card.style.transition = 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+        });
+
+        card.addEventListener('mouseenter', () => {
+            card.style.transition = 'transform 0.1s ease';
+        });
+    });
 
     // ---- Parallax Images on Scroll ----
     const parallaxImages = document.querySelectorAll('.parallax-img img');
@@ -100,7 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const offset = scrollPercent * -50;
             img.style.transform = `translateY(${offset}px) scale(1.1)`;
         });
-    });
+    }, { passive: true });
 
     // ---- Image Tilt Effect ----
     const tiltElements = document.querySelectorAll('.img-tilt');
@@ -212,27 +344,9 @@ document.addEventListener('DOMContentLoaded', () => {
         lazyObserver.observe(img);
     });
 
-    // --- Dead Link Handler: Prevent jump & show toast for href="#" ---
+    // --- Prevent jump for placeholder links ---
     document.querySelectorAll('a[href="#"]').forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            // Show subtle toast
-            let toast = document.getElementById('jbg-toast');
-            if (!toast) {
-                toast = document.createElement('div');
-                toast.id = 'jbg-toast';
-                toast.style.cssText = 'position:fixed;bottom:32px;left:50%;transform:translateX(-50%) translateY(20px);background:#0A1628;color:#fff;padding:14px 28px;border-radius:12px;font-size:0.9rem;font-weight:600;z-index:9999;opacity:0;transition:all 0.35s cubic-bezier(0.4,0,0.2,1);pointer-events:none;box-shadow:0 8px 32px rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.08);';
-                document.body.appendChild(toast);
-            }
-            toast.textContent = 'Coming Soon — Stay Tuned!';
-            toast.style.opacity = '1';
-            toast.style.transform = 'translateX(-50%) translateY(0)';
-            clearTimeout(toast._timeout);
-            toast._timeout = setTimeout(() => {
-                toast.style.opacity = '0';
-                toast.style.transform = 'translateX(-50%) translateY(20px)';
-            }, 2500);
-        });
+        link.addEventListener('click', e => e.preventDefault());
     });
 
     // ---- Auto Aria-Labels for Social Links ----
@@ -253,16 +367,171 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---- Cookie Consent Banner ----
     if (!localStorage.getItem('jbg_cookie_consent')) {
         const banner = document.createElement('div');
-        banner.id = 'cookie-consent';
+        banner.className = 'cookie-banner';
         banner.innerHTML = `
-            <div style="position:fixed;bottom:0;left:0;right:0;background:#0A1628;color:#fff;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;z-index:10000;font-size:0.9rem;box-shadow:0 -4px 24px rgba(0,0,0,0.3);flex-wrap:wrap;border-top:1px solid rgba(59,130,246,0.2);">
-                <p style="margin:0;color:rgba(255,255,255,0.8);flex:1;min-width:250px;line-height:1.5;">We use cookies to enhance your browsing experience and analyze site traffic. By continuing, you consent to our use of cookies. <a href="privacy-policy.html" style="color:#3b82f6;text-decoration:underline;">Learn More</a></p>
-                <div style="display:flex;gap:10px;flex-shrink:0;">
-                    <button onclick="document.getElementById('cookie-consent').remove();localStorage.setItem('jbg_cookie_consent','accepted')" style="background:linear-gradient(135deg,#3b82f6,#2563eb);color:#fff;border:none;padding:10px 24px;border-radius:8px;font-weight:600;cursor:pointer;font-size:0.85rem;transition:transform 0.2s;">Accept</button>
-                    <button onclick="document.getElementById('cookie-consent').remove();localStorage.setItem('jbg_cookie_consent','declined')" style="background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,0.15);padding:10px 20px;border-radius:8px;font-weight:500;cursor:pointer;font-size:0.85rem;">Decline</button>
-                </div>
+            <p>We use cookies to enhance your experience and analyze site traffic. <a href="privacy-policy.html">Learn More</a></p>
+            <div class="cookie-actions">
+                <button class="cookie-accept" onclick="this.closest('.cookie-banner').remove();localStorage.setItem('jbg_cookie_consent','accepted')">Accept</button>
+                <button class="cookie-decline" onclick="this.closest('.cookie-banner').remove();localStorage.setItem('jbg_cookie_consent','declined')">Decline</button>
             </div>`;
         document.body.appendChild(banner);
     }
+
+    // ---- Parallax Hero Background on Scroll ----
+    const heroBg = document.querySelector('.hero-home-bg img');
+    if (heroBg) {
+        window.addEventListener('scroll', () => {
+            const scrollY = window.pageYOffset;
+            heroBg.style.transform = `scale(1.1) translateY(${scrollY * 0.15}px)`;
+        }, { passive: true });
+    }
+
+    // ---- Text Scramble Effect on hover for result metrics ----
+    const resultMetrics = document.querySelectorAll('.result-metric');
+    resultMetrics.forEach(metric => {
+        const originalText = metric.textContent;
+        metric.addEventListener('mouseenter', () => {
+            const chars = '0123456789%+KMB';
+            let iterations = 0;
+            const interval = setInterval(() => {
+                metric.textContent = originalText.split('').map((char, idx) => {
+                    if (idx < iterations) return originalText[idx];
+                    return chars[Math.floor(Math.random() * chars.length)];
+                }).join('');
+                iterations += 1/3;
+                if (iterations >= originalText.length) {
+                    clearInterval(interval);
+                    metric.textContent = originalText;
+                }
+            }, 30);
+        });
+    });
+
+    // ---- Service Cards — Glow Follow Mouse ----
+    document.querySelectorAll('.service-card-img').forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            card.style.setProperty('--mouse-x', x + 'px');
+            card.style.setProperty('--mouse-y', y + 'px');
+        });
+    });
+
+    // ============================================
+    // HOMEPAGE — Hero Carousel
+    // ============================================
+    const heroCarousel = document.getElementById('heroCarousel');
+    if (heroCarousel) {
+        const slides = heroCarousel.querySelectorAll('.hp-hero-slide');
+        const dots = heroCarousel.querySelectorAll('.hp-dot');
+        const prevBtn = heroCarousel.querySelector('.hp-hero-prev');
+        const nextBtn = heroCarousel.querySelector('.hp-hero-next');
+        let currentSlide = 0;
+        let heroInterval;
+        const HERO_SPEED = 6000;
+
+        function goToSlide(idx) {
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+            currentSlide = (idx + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() { goToSlide(currentSlide + 1); }
+        function prevSlide() { goToSlide(currentSlide - 1); }
+
+        function startHeroAuto() {
+            heroInterval = setInterval(nextSlide, HERO_SPEED);
+        }
+        function resetHeroAuto() {
+            clearInterval(heroInterval);
+            startHeroAuto();
+        }
+
+        if (nextBtn) nextBtn.addEventListener('click', () => { nextSlide(); resetHeroAuto(); });
+        if (prevBtn) prevBtn.addEventListener('click', () => { prevSlide(); resetHeroAuto(); });
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                goToSlide(parseInt(dot.dataset.slide));
+                resetHeroAuto();
+            });
+        });
+
+        // Touch/swipe support
+        let touchStartX = 0;
+        heroCarousel.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; }, { passive: true });
+        heroCarousel.addEventListener('touchend', (e) => {
+            const diff = touchStartX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 60) {
+                diff > 0 ? nextSlide() : prevSlide();
+                resetHeroAuto();
+            }
+        }, { passive: true });
+
+        startHeroAuto();
+    }
+
+    // ============================================
+    // HOMEPAGE — Horizontal Scroll Arrows
+    // ============================================
+    document.querySelectorAll('.hp-arr').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const trackId = btn.dataset.carousel;
+            const track = document.getElementById(trackId);
+            if (!track) return;
+            const scrollAmount = 400;
+            if (btn.classList.contains('hp-arr-prev')) {
+                track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            } else {
+                track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        });
+    });
+
+    // ============================================
+    // HOMEPAGE — Solutions Tabs
+    // ============================================
+    document.querySelectorAll('.hp-sol-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            const panelId = tab.dataset.panel;
+            // Deactivate all tabs in this group
+            tab.closest('.hp-sol-tabs').querySelectorAll('.hp-sol-tab').forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            // Switch panels
+            document.querySelectorAll('.hp-sol-panel').forEach(p => p.classList.remove('active'));
+            const target = document.getElementById(panelId);
+            if (target) target.classList.add('active');
+        });
+    });
+
+    // ============================================
+    // HOMEPAGE — News & Insights Tabs
+    // ============================================
+    document.querySelectorAll('.hp-ni-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            const panelId = tab.dataset.panel;
+            tab.closest('.hp-ni-tabs').querySelectorAll('.hp-ni-tab').forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            document.querySelectorAll('.hp-ni-panel').forEach(p => p.classList.remove('active'));
+            const target = document.getElementById(panelId);
+            if (target) target.classList.add('active');
+        });
+    });
+
+    // ============================================
+    // HOMEPAGE — Scroll-triggered section reveals
+    // ============================================
+    const hpSections = document.querySelectorAll('.hp-whats-new, .hp-solutions, .hp-stories, .hp-stats, .hp-events, .hp-news-insights, .hp-careers, .hp-partner-cta');
+    const hpObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('hp-visible');
+                hpObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    hpSections.forEach(s => hpObserver.observe(s));
 
 });
